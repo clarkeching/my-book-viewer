@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Clarke Ching's Free Book Library</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #f5f7fa;
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            --text-color: #1a1a2e;
+            --card-bg: #ffffff;
+            --card-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --card-shadow-hover: 0 12px 40px rgba(0,0,0,0.12);
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --accent-glow: rgba(59, 130, 246, 0.3);
+            --muted-color: #6b7280;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-gradient);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            padding: 70px 20px 50px;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1e3a5f 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .header h1 {
+            margin: 0 0 12px 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            position: relative;
+        }
+
+        .header .author {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .header .tagline {
+            font-size: 1.05rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .library {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--muted-color);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .book-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .book-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 24px;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .book-cover.speed { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .book-cover.detective { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .book-cover.rules { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .book-cover.corkscrew { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .book-cover.rolling { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #1a1a2e; text-shadow: none; }
+        .book-cover.rocks-gold { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #1a1a2e; text-shadow: none; }
+        .book-cover.masterclass { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+
+        .book-info {
+            padding: 28px;
+        }
+
+        .book-title {
+            margin: 0 0 12px 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-color);
+            letter-spacing: -0.3px;
+        }
+
+        .book-pitch {
+            color: var(--muted-color);
+            font-size: 0.95rem;
+            margin: 0 0 24px 0;
+            line-height: 1.7;
+        }
+
+        .book-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--accent-glow);
+        }
+
+        .btn-secondary {
+            background: #f3f4f6;
+            color: var(--muted-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: #e5e7eb;
+            border-color: #d1d5db;
+        }
+
+        .progress-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            background: rgba(59, 130, 246, 0.1);
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+        }
+
+        .footer p {
+            margin: 8px 0;
+        }
+
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: var(--accent-hover);
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 50px 20px 40px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .book-actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Free Book Library</h1>
+        <p class="author">by Clarke Ching</p>
+        <p class="tagline">Practical wisdom for software teams who want to deliver faster, calmer, and with fewer bottlenecks.</p>
+    </header>
+
+    <main class="library">
+        <p class="section-title">Choose a book to start reading</p>
+
+        <div class="books-grid" id="booksGrid">
+            <!-- Books will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>All books free to read online. Want a paper copy? <a href="#">Find them on Amazon</a></p>
+        <p>Questions or want to work together? <a href="mailto:clarke@clarkeching.com">Get in touch</a></p>
+    </footer>
+
+    <script>
+        const books = [
+            {
+                id: 'speed-book',
+                title: 'The SPEED Book',
+                pitch: 'Why the fastest software teams choose one strategic bottleneck instead of fighting many. Shape your team like an hourglass and watch the chaos disappear.',
+                coverClass: 'speed',
+                available: true
+            },
+            {
+                id: 'bottleneck-rules',
+                title: 'The Bottleneck Rules',
+                pitch: 'The essential principles every leader needs to know about bottlenecks. Short, punchy, and immediately actionable.',
+                coverClass: 'rules',
+                available: false
+            },
+            {
+                id: 'bottleneck-detective',
+                title: 'The Bottleneck Detective',
+                pitch: 'Learn to spot the hidden constraints strangling your team\'s throughput. A practical guide to finding what\'s really slowing you down.',
+                coverClass: 'detective',
+                available: false
+            },
+            {
+                id: 'corkscrew-thinking',
+                title: 'Corkscrew Thinking',
+                pitch: 'When you\'re stuck, don\'t push harder\u2014twist sideways. Unconventional problem-solving for people who\'ve tried everything else.',
+                coverClass: 'corkscrew',
+                available: false
+            },
+            {
+                id: 'rolling-rocks',
+                title: 'Rolling Rocks Downhill',
+                pitch: 'A business novel about a software team on the brink of disaster who discover that going faster means doing less. Fiction that feels uncomfortably familiar.',
+                coverClass: 'rolling',
+                available: false
+            },
+            {
+                id: 'rocks-into-gold',
+                title: 'Rocks into Gold',
+                pitch: 'The sequel to Rolling Rocks Downhill. The team faces new challenges and learns that sustainable speed requires sustainable thinking.',
+                coverClass: 'rocks-gold',
+                available: false
+            },
+            {
+                id: 'masterclass-goldratt',
+                title: 'My Masterclass with Eli Goldratt',
+                pitch: 'Personal lessons from the creator of the Theory of Constraints. What I learned sitting at the feet of a genius.',
+                coverClass: 'masterclass',
+                available: false
+            }
+        ];
+
+        function getProgress(bookId) {
+            const chapter = localStorage.getItem(`${bookId}-chapter`);
+            const total = localStorage.getItem(`${bookId}-total`);
+            if (chapter && total) {
+                const percent = Math.round(((parseInt(chapter) + 1) / parseInt(total)) * 100);
+                return percent;
+            }
+            return null;
+        }
+
+        function renderBooks() {
+            const grid = document.getElementById('booksGrid');
+
+            books.forEach(book => {
+                const progress = getProgress(book.id);
+                const card = document.createElement('div');
+                card.className = 'book-card';
+
+                card.innerHTML = `
+                    <div class="book-cover ${book.coverClass}">${book.title}</div>
+                    <div class="book-info">
+                        ${progress ? `<span class="progress-badge">${progress}% read</span>` : ''}
+                        <h2 class="book-title">${book.title}</h2>
+                        <p class="book-pitch">${book.pitch}</p>
+                        <div class="book-actions">
+                            ${book.available
+                                ? `<a href="reader.html?book=${book.id}" class="btn btn-primary">${progress ? 'Continue Reading' : 'Read Free'}</a>`
+                                : `<span class="btn btn-secondary">Coming Soon</span>`
+                            }
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        renderBooks();
+    </script>
+</body>
+</html>

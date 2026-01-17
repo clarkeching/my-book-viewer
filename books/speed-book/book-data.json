@@ -1,0 +1,3301 @@
+[
+  {
+    "title": "The Payne Principle",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Imagine this: You&#x27;re on a bus one morning, on your way to work, when you discover that some nasty man with a grudge has rigged the bus to explode if it drops below 50 miles per hour."
+      },
+      {
+        "type": "paragraph",
+        "text": "Not a great way to start the day. Though perhaps a good way to meet your next romantic partner."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what happens to Annie Porter\u2014played by Sandra Bullock\u2014in the 1994 movie <em>Speed</em>. Keanu Reeves plays Jack Traven, an LAPD cop who commandeers a car, races through traffic, and jumps onto the moving bus to help. But when a panicked passenger sees Jack and pulls a gun, the driver gets shot. Annie takes the wheel. She&#x27;s petrified, but she keeps driving. She has no choice. If she slows down, everyone dies."
+      },
+      {
+        "type": "paragraph",
+        "text": "Together, Annie and Jack have to race through city streets, crash through barriers, and jump gaps in freeways. Always on the edge of disaster. Gotta keep the speed up, or we die. But the roads aren&#x27;t built for it."
+      },
+      {
+        "type": "paragraph",
+        "text": "You see this happening in software teams. Yes, even the good ones."
+      },
+      {
+        "type": "paragraph",
+        "text": "Leaders push their teams to go faster and faster\u2014often by imposing productivity metrics and goals, their well-meaning equivalent of the bomb\u2014and the teams start acting just like that bus. Racing ahead. Taking dangerous shortcuts. Cutting corners. Crashing into things."
+      },
+      {
+        "type": "paragraph",
+        "text": "Often, it&#x27;s because there are too many developers and not enough product or technical leaders to guide them. But you can&#x27;t slow down below 50! So the teams stay busy, moving fast, going nowhere."
+      },
+      {
+        "type": "paragraph",
+        "text": "The instinct is to add more power\u2014more developers, more hours, more pressure. But that&#x27;s not how you make something go faster. You reshape it. Aerodynamics, not horsepower."
+      },
+      {
+        "type": "paragraph",
+        "text": "Near the end of the movie, the bus ends up at an airport. A wide-open space. No obstacles. They can finally drive without crashing into things."
+      },
+      {
+        "type": "paragraph",
+        "text": "Totally pointless."
+      },
+      {
+        "type": "paragraph",
+        "text": "They&#x27;re going around and around in circles. But there&#x27;s a bomb on board, so they&#x27;ve got to keep going fast."
+      },
+      {
+        "type": "paragraph",
+        "text": "Busy. Busy. Busy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then the bus\u2014which has been burning fuel like crazy\u2014starts to run out of fuel. Which makes it even more likely to crash and burn."
+      },
+      {
+        "type": "paragraph",
+        "text": "Burn out."
+      },
+      {
+        "type": "paragraph",
+        "text": "Speed kills."
+      },
+      {
+        "type": "paragraph",
+        "text": "I&#x27;m sure you&#x27;ve seen it: teams burn out, rack up technical debt, and ruin people&#x27;s family lives, all for the sake of speed that&#x27;s going nowhere, fast."
+      },
+      {
+        "type": "paragraph",
+        "text": "We&#x27;ve been there."
+      },
+      {
+        "type": "paragraph",
+        "text": "I call this the Payne Principle\u2014named after the villain, Howard Payne, played by Dennis Hopper."
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>Going fast in the wrong direction is not going fast at all.</strong>"
+      },
+      {
+        "type": "paragraph",
+        "text": "It&#x27;s just burning fuel."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here are the key lessons of this book:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1.\tEvery software team has a bottleneck\u2014that\u2019s just a fact."
+      },
+      {
+        "type": "paragraph",
+        "text": "2.\tEvery software team should have one bottleneck, in one specific place, as a deliberate strategic choice."
+      },
+      {
+        "type": "paragraph",
+        "text": "3.\tIf the bottleneck is anywhere else\u2014which it usually is\u2014your teams will be very busy, very stressed, and very sluggish. They will spend most of their days playing whack-a-mole with bottlenecks that keep popping up all over the place."
+      },
+      {
+        "type": "paragraph",
+        "text": "The fastest, most productive Agile teams are shaped like an hourglass\u2014with the bottleneck in the middle."
+      },
+      {
+        "type": "paragraph",
+        "text": "They choose one strategic bottleneck rather than many random bottlenecks."
+      },
+      {
+        "type": "paragraph",
+        "text": "Aerodynamics over bombs."
+      },
+      {
+        "type": "paragraph",
+        "text": "Calm over chaos."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you&#x27;ve studied <em>Bottleneck Thinking</em>, you&#x27;ve been trained to <em>find</em>. This book says: Stop finding. Start choosing."
+      },
+      {
+        "type": "paragraph",
+        "text": "I call them Timer Teams. (An hourglass-shaped team where developers are the deliberate bottleneck, supported by slack upstream and downstream.)"
+      },
+      {
+        "type": "paragraph",
+        "text": "They\u2019re fast, productive, and surprisingly calm. And so, so much fun to work in."
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>\u2022\tPart 1:</strong> What are Timer Teams?"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>\u2022\tPart 2:</strong> How do we create, protect, and grow them?"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>\u2022\tPart 3:</strong> The People Who Make Teams Work"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>\u2022\tPart 4:</strong> When the Bottleneck Is at the Top"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>\u2022\tAfterword:</strong> Eve&#x27;s Story (Some say it&#x27;s the best part of the book.)"
+      },
+      {
+        "type": "paragraph",
+        "text": "One more thing. This book explains Timer Teams first\u2014that&#x27;s the clearest way to teach it. But when I help organizations implement this? We often need to start at the top. Debottleneck the leaders, then they set up the Timer Teams. You&#x27;ll see why in Part 4."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now, let&#x27;s get moving."
+      }
+    ]
+  },
+  {
+    "title": "Part 1: Timer Teams",
+    "content": []
+  },
+  {
+    "title": "Chapter 1: What\u2019s the Right Number of Testers?",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "My story starts about fifteen years ago. I was in a creaky, old meeting room, just off the old town in Edinburgh, helping a manager called Rosie put together her first Agile team. This was a brand-new product."
+      },
+      {
+        "type": "paragraph",
+        "text": "She asked me, \u201cHow many testers do we need?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cUmm. How many do you think?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She said, \u201cI don\u2019t know. I\u2019ve never worked with Agile teams before, and in the past, we always did our testing after most of the coding was done. But now that we\u2019re coding and testing at the same time \u2026\u201d She shrugged. \u201cI\u2019ve no idea how many people we need.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I nodded."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd we\u2019re going to have some automated tests too, so they\u2019re like robot testers, but the testers still have to help set them up. Right?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cRight.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked at me. \u201cSo what\u2019s the answer?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cHow many developers do you have?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTwelve. Plus a lead developer.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cIn my last job at a famous, massive international company\u2014one that employed roughly 15,000 programmers\u2014we had a rule that you had to have one tester for every three developers.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo we need four testers for twelve developers,\u201d she said."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cMaybe. Maybe more. Maybe less. That was a rule of thumb, and it never worked perfectly. We found that in some teams, that was too many testers. And in others, it was too few. Sometimes it was a Goldilocks ratio\u2014just right.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHmmm,\u201d she said. \u201cThat\u2019s not helpful.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cYou\u2019re hiring a mix of employees and contract freelancer testers, right?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYep.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo here\u2019s a better rule: Hire one or even two testers more than you think you need. If that\u2019s too many, you can let one go at the end of their contract term. And if it\u2019s too few, you\u2019ll soon know, and you can hire more.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She frowned. \u201cI don\u2019t like the idea of hiring too many people. It\u2019s a waste of money.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cCompared to what?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat do you mean?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat does it cost to hire one extra tester for three months?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She said a number. Let\u2019s say it was \u00a325,000\u2014the currency doesn\u2019t matter, nor does the amount."
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cDo you know how much money the company loses if it\u2019s a month late?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She said, \u201cThe cost of delay? I\u2019ve been reading about that.\u201d She thought a moment. \u201cI\u2019ve no idea. No one has ever said.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cThe project sponsor told me it was \u00a31.9 million a month. Roughly.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOh.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYeah.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo 25k is peanuts. A mere rounding error in the bigger picture,\u201d she said."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIf you don\u2019t have enough testers, then your entire team will run too slow, and your project will easily be delayed by a month. That\u2019s a very expensive and costly mistake.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cVery.\u201d She paused. \u201cBut how will I know if I\u2019ve hired enough testers?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cWhat do you think happens if you don\u2019t have enough testers?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She thought a moment. \u201cThe testers will take too long to test.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd then?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThe developers won\u2019t get feedback fast enough.\u201d She frowned. \u201cThey won\u2019t wait around, will they? They\u2019ll start working on new stuff.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I nodded. \u201cSo work in progress \u2026\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cShoots up.\u201d She was getting it now. \u201cAnd when the bugs finally come back, the developers will have moved on. They\u2019ll be working on something else entirely. The bug will be for code they wrote days ago.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhich means?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHarder to fix. Slower.\u201d She sat back. \u201cThe whole team slows down because we didn\u2019t have enough testers.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I knew she\u2019d just completed some Agile training, and what she\u2019d described were two of its fundamental rules."
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cDevelopers need fast feedback from testers, right?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She nodded."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd teams need to keep work in progress low, right?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She nodded again."
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cFast teams obey those rules. Slow teams don\u2019t.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She nodded slowly, thinking. \u201cSo, you\u2019re saying that the number of testers we hire determines whether we can obey both rules, or not.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cExactly. So the rule of thumb for testers is?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She thought a moment. \u201cCan they give fast feedback?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThat\u2019s it. If they can, you\u2019ve probably got enough. If they can\u2019t, you need more.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She nodded, slowly, as if banking that thought in her mind."
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cAnd the cost of not having enough?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThe whole team slows down. Developers either wait or don\u2019t wait, and either way, they make things worse. Either way, you\u2019re late. And late is expensive.\u201d"
+      }
+    ]
+  },
+  {
+    "title": "Chapter 2: What\u2019s the Right Number of Product People?",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Rosie thought for a moment."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAll right, so we\u2019ve got twelve developers. And six testers. How many product analysts do I need?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said nothing."
+      },
+      {
+        "type": "paragraph",
+        "text": "She said, \u201cI take it there\u2019s no ratio for this question either.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cNo.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd we can\u2019t use the same rule of thumb, can we? Because it doesn\u2019t make sense.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cNo.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She paused. \u201cBut I\u2019m guessing that we need to use a variation on that rule of thumb. We need enough people working upstream of the developers so that we don\u2019t starve them of work.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYes. And also\u2014you have enough that the developers are always working on high-quality inputs. And high-value inputs.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOkay.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIf the testers&#x27; rule of thumb is that you need enough testers so they can give quick feedback, the equivalent for the product people\u2014analysts, product managers, or whatever you call them\u2014is that they have time to think.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTime to think,\u201d she repeated."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThey need time to think without cutting corners,\u201d I said. \u201cIt\u2019s true that a lot of what they do will be collaborative\u2014working alongside developers and testers. But that only works well if they actually have time to do it properly.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cRight.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIf they\u2019re rushed because there aren\u2019t enough of them, and they\u2019re trying to keep twelve developers and six testers busy, they\u2019ll feel under pressure to cut corners. And it\u2019s not just that they\u2019ll feel the pressure\u2014they\u2019ll be put under pressure. You can\u2019t leave seventeen people sitting idle because they haven\u2019t got work to do. It\u2019s just not palatable.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Rosie nodded. \u201cYeah, I get that. And there\u2019s no way that the developers would just sit there waiting anyway. They\u2019d invent work. Or grab something that\u2019s only half-ready and start working on it\u2014then spend ages reworking it later.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cExactly. That\u2019s why we need enough product analysts so that they have time to think. Without cutting corners.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOkay,\u201d she said. \u201cBut what happens when they do cut corners? What does that actually look like?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cIf they\u2019re rushed, they\u2019ll cut corners. Hand work over before it\u2019s ready. Make choices they wouldn\u2019t make if they had more time.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd then the developers build the wrong thing?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOr they build it, and it has to be rebuilt. Or they get stuck waiting for clarification. Either way\u2014rework. And rework is expensive.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She nodded. \u201cIt\u2019s like that old saying that carpenters use: <em>Measure twice, cut once</em>.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSort of. Developers cut code, but it\u2019s not like cutting wood. You can\u2019t get everything right up front\u2014and you shouldn\u2019t try. Some things only become clear once you start building. That\u2019s discovery. Collaboration. That\u2019s healthy.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo it\u2019s not about getting everything perfect.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cNo. It\u2019s about having enough time to think things through\u2014so you avoid the expensive rework. The rework that didn\u2019t need to happen.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She frowned. \u201cWhen they\u2019re under pressure, do analysts know they\u2019re cutting corners?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Now, it was my time to think. I\u2019d never considered this question before. I said, \u201cUsually not. And if they do know\u2014deep down\u2014they\u2019re too busy to do anything about it. They just push on and resent it.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Rosie sat with that for a moment."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo the rule of thumb for product people is: Do they have time to think?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I nodded. \u201cYes. If they\u2019re rushing, you probably don\u2019t have enough of them.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd the cost of not having enough?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThe whole team slows down. Or worse\u2014they stay busy, but on the wrong things.\u201d"
+      }
+    ]
+  },
+  {
+    "title": "Chapter 3: Timer Teams",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Over time, I&#x27;ve come to realize that these two simple rules are almost universal. And almost universally ignored."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you want your team to go fast\u2014in the right direction\u2014it needs to be shaped like an hourglass."
+      },
+      {
+        "type": "paragraph",
+        "text": "I call these Timer Teams."
+      },
+      {
+        "type": "image",
+        "src": "books/speed-book/images/rId3.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "The hourglass is how you spot one. The name is how you talk about it."
+      },
+      {
+        "type": "paragraph",
+        "text": "At the top of the hourglass are the <em>upstream roles</em>\u2014the people who figure out what to build. Analysts, product managers, UX designers, and architects. Their job is thinking."
+      },
+      {
+        "type": "paragraph",
+        "text": "At the bottom are the <em>downstream roles</em>\u2014the people who confirm that what was built actually works. Testers, QA engineers, and automation specialists. Their job is feedback."
+      },
+      {
+        "type": "paragraph",
+        "text": "And in the narrow neck, the developers. They turn thinking into software."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sand mostly flows one way\u2014from thinking, through coding, to feedback."
+      },
+      {
+        "type": "paragraph",
+        "text": "If the top hourglass bulb is too small, the neck starves. Developers run out of good work or grab half-baked work and pay for it later."
+      },
+      {
+        "type": "paragraph",
+        "text": "If the bottom hourglass bulb is too small, the neck clogs up like a shower drain pipe \u2014ugh. Developers finish work but don&#x27;t get feedback. They move on to new things. Work in progress piles up. Bugs get discovered late, when they&#x27;re expensive to fix."
+      },
+      {
+        "type": "paragraph",
+        "text": "But sand doesn&#x27;t only flow forward."
+      },
+      {
+        "type": "paragraph",
+        "text": "When things go wrong, it flows backward. Bugs go back to developers. Misunderstandings go back to the analysts. Avoidable rework piles up in the top bulb, waiting to be fixed."
+      },
+      {
+        "type": "paragraph",
+        "text": "In an unhealthy team, that top bulb fills with bad sand: rushed work, low-value work, and rework."
+      },
+      {
+        "type": "paragraph",
+        "text": "Some rework is healthy\u2014that&#x27;s learning, discovery, and collaboration. But a team whose backlog is full of bugs, preventable changes, and rework? They&#x27;re busy fixing stuff, not being productive. That&#x27;s a broken hourglass."
+      },
+      {
+        "type": "paragraph",
+        "text": "Good news: Agile teams already have a way to see this. They call it the product backlog."
+      },
+      {
+        "type": "paragraph",
+        "text": "The backlog is the sand sitting in the top bulb of the hourglass. In a healthy team, it\u2019s good sand: well thought out, prepared, and ready to flow through the neck."
+      },
+      {
+        "type": "paragraph",
+        "text": "The backlog tells you two things."
+      },
+      {
+        "type": "paragraph",
+        "text": "First, quantity. If there&#x27;s enough sand up top\u2014enough work ready, but not a crazy amount\u2014your analysts clearly have enough capacity to keep your developers fed. That&#x27;s what you want. If the top bulb keeps running empty, your analysts can&#x27;t keep up. They&#x27;re the bottleneck now."
+      },
+      {
+        "type": "paragraph",
+        "text": "Second, quality. If work keeps coming back as rework\u2014bugs, misunderstandings, and changes that could have been avoided\u2014that&#x27;s a sign your analysts are rushing. They&#x27;re keeping up in volume but cutting corners. They don&#x27;t have time to think."
+      },
+      {
+        "type": "paragraph",
+        "text": "Either signal often means the same thing: you don&#x27;t have enough upstream capacity."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two rules of thumb:"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>1.\tUpstream:</strong> Do your product people have time to think\u2014without cutting corners?"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>2.\tDownstream:  </strong>Are your testers able to give fast feedback?"
+      },
+      {
+        "type": "paragraph",
+        "text": "If the answer to both is yes, your team is probably shaped right."
+      },
+      {
+        "type": "paragraph",
+        "text": "This means some people won&#x27;t be fully occupied. That&#x27;s not waste. It&#x27;s thinking time upstream. Fast feedback downstream. It&#x27;s speed and profit\u2014just stored in a different form."
+      },
+      {
+        "type": "paragraph",
+        "text": "This is what aerodynamic looks like. No drag. Shaped for speed."
+      },
+      {
+        "type": "paragraph",
+        "text": "Let me show you what I mean."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 4: The Smiley Face",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A few years after my conversation with Rosie, I began discussing these ideas at conferences. I called them U-shaped teams back then\u2014because of how they look on a graph. You&#x27;ll see what I mean in a moment."
+      },
+      {
+        "type": "paragraph",
+        "text": "At one conference, a guy I&#x27;ll call Tim pinged me after my talk."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHey, Clarke, could I buy you breakfast? I couldn&#x27;t come to your talk yesterday\u2014I attended another session. But my boss said it was a real shame that I missed it. Any chance you could give me the ten-minute version?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Breakfast was included with the conference, but hey, I like talking about this stuff."
+      },
+      {
+        "type": "paragraph",
+        "text": "So I told him the Rosie story. Testers need enough capacity to give fast feedback. Analysts need enough capacity to think without cutting corners. And the developers\u2014they&#x27;re the bottleneck. The scarcest resource."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then I showed him two charts."
+      },
+      {
+        "type": "paragraph",
+        "text": "The first was a simple bar chart\u2014absolute numbers\u2014how many people in each role. Three analysts, twelve developers, and six testers."
+      },
+      {
+        "type": "image",
+        "src": "books/speed-book/images/rId4.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "Absolute Capacity - hides the bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "The second was different. It showed relative capacity\u2014how much slack each role has compared to the bottleneck."
+      },
+      {
+        "type": "image",
+        "src": "books/speed-book/images/rId5.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "Relative Capacity - reveals the bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cPicture it like this,\u201d I said. \u201cAnalysts on the left, developers in the middle, and testers on the right. Relative capacity on the vertical axis. What shape do you get?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He thought for a moment. \u201cA U-shape. Developers are in the middle, at the bottom. Everyone else is higher.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cExactly. The developers are the bottleneck. Everyone else has slack\u2014room to respond quickly when the developers need them. That&#x27;s what makes the team fast.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tim stared at the chart."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOh, wow,\u201d he said. \u201cI think I see why my boss wanted me to talk to you.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhy&#x27;s that?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI&#x27;ve got a U-shaped team right now. It works well. But I&#x27;ve just got a budget from my boss to hire three new developers.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThat&#x27;s going to flip the shape. The developers won&#x27;t be at the bottom any longer. The testers will be. Or the analysts. Or both.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He grabbed a napkin and sketched it out."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then he smiled and said, \u201cThe U-shape looks like a smiley face.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I smiled back. I\u2019d never noticed that."
+      },
+      {
+        "type": "paragraph",
+        "text": "He said, \u201cBut if I hire three developers and no one else \u2026 it will flip upside down and be N-shaped.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I nodded."
+      },
+      {
+        "type": "paragraph",
+        "text": "He said, \u201cIt will turn into a frown.\u201d"
+      },
+      {
+        "type": "image",
+        "src": "books/speed-book/images/rId6.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "He paused, then frowned, thinking this through. \u201cI think maybe I need to hire one developer, one analyst, and one tester instead.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThat&#x27;s one option,\u201d I said. \u201cOr you could hire one developer who is good at writing automated tests. That way, you&#x27;re building test capacity at the same time.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd, and, and,\u201d he said, thinking out loud. \u201cYou know what, Clarke? I bet I could persuade one of our operational staff\u2014Maria\u2014to come join us, and we could train her up to be an analyst. She already works with us a lot as our subject-matter expert, and she helps out with user acceptance testing. She\u2019d be perfect.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He looked down at his hands, then looked back up at me. \u201cThat\u2019s what I\u2019ll do. I like my smiley-face team, and I\u2019d like to keep it that way.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tim didn&#x27;t hire those three developers. He kept the hourglass shape."
+      },
+      {
+        "type": "paragraph",
+        "text": "But what if he had?"
+      }
+    ]
+  },
+  {
+    "title": "Chapter 5: The Frown",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "What I\u2019m about to say is counterintuitive."
+      },
+      {
+        "type": "paragraph",
+        "text": "Everyone\u2019s intuition says: If you want the team to go faster, hire more developers."
+      },
+      {
+        "type": "paragraph",
+        "text": "It\u2019s obvious, right? Developers write the code. More developers, more code, and faster delivery."
+      },
+      {
+        "type": "paragraph",
+        "text": "It\u2019s like thinking that, if you want your car to go faster, you add a turbocharger or buy a bigger engine. Which sounds sensible\u2014until you realize that most cars would go faster if you just changed the traffic systems so there was less queuing at traffic lights."
+      },
+      {
+        "type": "paragraph",
+        "text": "In <em>Bottleneck Thinking</em>\u2014my specialty\u2014the answer is: Almost never \u2018hire more developers.&#x27; It&#x27;s &#x27;reshape the team around the developers you already have.&#x27;"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tim\u2019s story shows how easy it is to get this wrong."
+      },
+      {
+        "type": "paragraph",
+        "text": "His team had seven developers, two analysts, and two testers. The testers were experienced, and they\u2019d built up a good suite of automated tests\u2014so his testing capacity was stronger than the headcount suggested."
+      },
+      {
+        "type": "paragraph",
+        "text": "It was a U-shaped team. Developers at the bottom. Smiley face."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tim was happy. Work flowed through the system without being blocked. No one felt under pressure to cut corners."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now imagine he\u2019d hired those three new developers. His team would have gone from seven developers to ten. But still two analysts. Still two testers."
+      },
+      {
+        "type": "paragraph",
+        "text": "What happens next?"
+      },
+      {
+        "type": "paragraph",
+        "text": "His boss would expect those ten developers to be busy. Can you imagine how she\u2019d react if Tim hired three new developers and they were sitting around waiting for work? She wouldn\u2019t be happy."
+      },
+      {
+        "type": "paragraph",
+        "text": "So Tim would go scrambling to make sure the analysts could feed them enough work. And the testers would be scrambling to keep up with the output."
+      },
+      {
+        "type": "paragraph",
+        "text": "When you flip the shape, you&#x27;re running at the speed of the fastest, not the slowest. No one else can keep up. They cut corners, create costly, wasteful (and often invisible) rework. And bottlenecks? They pop up everywhere. When you run at the speed of the fastest, you turn everyone into a bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "When analysts are under pressure, three things happen."
+      },
+      {
+        "type": "heading2",
+        "text": "First, They Rush the Thinking"
+      },
+      {
+        "type": "paragraph",
+        "text": "Picture one of Tim\u2019s analysts\u2014let\u2019s call her Sarah. She thinks of herself as a craftswoman. She takes pride in her work."
+      },
+      {
+        "type": "paragraph",
+        "text": "She\u2019s working on a new feature. It\u2019s on her screen, and she\u2019s thinking it through. There are some edge cases she hasn\u2019t fully explored yet. She knows she should spend another day or two digging into them, making sure she\u2019s got it right."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the developers keep asking: \u201cIs there anything ready for us to pick up?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She looks at the feature spec on her screen. It\u2019s not quite ready."
+      },
+      {
+        "type": "paragraph",
+        "text": "But it\u2019s close enough, right?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No. But she hands it over anyway."
+      },
+      {
+        "type": "paragraph",
+        "text": "The developers start working on it. She hopes that, if the edge cases are wrong, they\u2019ll come back and ask. She can fix them up later. The immediate pressure is off."
+      },
+      {
+        "type": "paragraph",
+        "text": "But she\u2019s traded that pressure for expensive rework down the line. The developers will hit problems. They\u2019ll get stuck. They\u2019ll build something that needs to be rebuilt. Fixing it later always takes longer than getting it right the first time."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sarah knows this. Half-baked work is like a half-baked chicken pie\u2014someone\u2019s going to get food poisoning. She handed it over anyway."
+      },
+      {
+        "type": "heading2",
+        "text": "Second, They Miss Opportunities to Simplify"
+      },
+      {
+        "type": "paragraph",
+        "text": "Picture Sam, Tim\u2019s other analyst. She\u2019s been wrestling with a tricky feature for a few days. She\u2019s climbed the mountain of complexity\u2014built something big, detailed, and complete. It works. But it\u2019s confusing."
+      },
+      {
+        "type": "paragraph",
+        "text": "She\u2019s reached what looks like the top. But it\u2019s a false summit. The real peak\u2014simplicity\u2014is still ahead. Another day or two or three of hard climbing to push through the complexity, strip it back, and make it elegant."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the developers are waiting. Her inbox is filling up with questions about when they can start."
+      },
+      {
+        "type": "paragraph",
+        "text": "She looks at her solution. It\u2019s clever. It covers all the cases. But it\u2019s complicated, and she knows it."
+      },
+      {
+        "type": "paragraph",
+        "text": "The pressure is on."
+      },
+      {
+        "type": "paragraph",
+        "text": "She hands it over."
+      },
+      {
+        "type": "paragraph",
+        "text": "The developers thank her for her hard work. They admire how thorough it is. How meaty and complicated and clever. This will be fun to work on."
+      },
+      {
+        "type": "paragraph",
+        "text": "They start building."
+      },
+      {
+        "type": "paragraph",
+        "text": "And because it\u2019s complicated, it takes far longer to build than the simple solution they never saw. The testers struggle to understand it. Bugs hide in the confusion. And for years afterward\u2014for the entire life of that software\u2014everyone who touches it will spend more effort than they needed to."
+      },
+      {
+        "type": "paragraph",
+        "text": "The best analysts know the difference between the false summit\u2014Peak Complicated\u2014and Peak Simplicity. They know to keep climbing. But Sam didn\u2019t have time. She stopped where she was, turned around, and started on the next feature."
+      },
+      {
+        "type": "heading2",
+        "text": "Third, They Cherry-Pick Easy Work"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tim, Sarah, and Sam grab lunch from the vending machine. They don\u2019t have time for anything else."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then they head into a meeting room. The developers have run out of work. Again."
+      },
+      {
+        "type": "paragraph",
+        "text": "They pull up the product backlog\u2014the list of features and improvements, prioritized by business value."
+      },
+      {
+        "type": "paragraph",
+        "text": "The top three items are all high value. But they all require days of thinking from Sarah and Sam. And if they do their job right\u2014thorough analysis, simple solutions\u2014each one might only keep the developers busy for a week or two."
+      },
+      {
+        "type": "paragraph",
+        "text": "That won\u2019t solve the problem. The developers will be hungry again in no time."
+      },
+      {
+        "type": "paragraph",
+        "text": "So they scroll down the backlog. Past item 4. Past item 10. Past item 15."
+      },
+      {
+        "type": "paragraph",
+        "text": "At position 19, they find something interesting. Two days of analyst work. Three to six weeks of developer work."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tim looks at Sarah. Sarah looks at Sam."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt\u2019s on the backlog,\u201d someone says. \u201cIt\u2019s not like we\u2019re inventing work.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "They\u2019re right. It is on the backlog. It is valuable."
+      },
+      {
+        "type": "paragraph",
+        "text": "But it\u2019s not the most valuable thing they could be doing. They\u2019ve traded a high-value feature for a medium-value one\u2014because the medium-value one was easier to prepare."
+      },
+      {
+        "type": "paragraph",
+        "text": "The team stays busy. The pressure eases. But the business doesn\u2019t get what it needed most."
+      },
+      {
+        "type": "paragraph",
+        "text": "Not unlike eating vending machine junk food because you\u2019re too busy to prepare something more nourishing."
+      },
+      {
+        "type": "paragraph",
+        "text": "You\u2019ve probably been in this meeting. We all have."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "The entire team is busy. Very busy. So much work to do. So much rework. But it\u2019s not fast."
+      },
+      {
+        "type": "paragraph",
+        "text": "It\u2019s the bus from <em>Speed</em> again\u2014racing around the airport, burning fuel, and going nowhere fast."
+      },
+      {
+        "type": "paragraph",
+        "text": "It\u2019s a good thing Tim didn\u2019t hire three developers."
+      },
+      {
+        "type": "paragraph",
+        "text": "He kept his quiet, calm, and hyperproductive Timer Team.\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>That time.</em>"
+      }
+    ]
+  },
+  {
+    "title": "Chapter 6: Flipping the Frown",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "About eighteen months after that breakfast, Tim called me."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI&#x27;ve done something stupid,\u201d he said."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cGo on.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cRemember our conversation about Timer Teams?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYeah, I remember. You didn&#x27;t hire those three developers. You kept the shape.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYeah, and that worked well.\u201d He sighed. \u201cBut somehow, I forgot everything we talked about, and six months ago, I hired more developers, and I flipped the team.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He explained. His team had been humming along nicely. Smiley face intact. Then his boss got excited about a new initiative and gave him a budget for four more developers."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt kinda felt wrong at the time, but I couldn\u2019t explain why,\u201d he said. \u201cBut it&#x27;s hard to turn down headcount. And we received some excellent resumes. So I hired them.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd \u2026 how\u2019s that going?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTerribly. Everything&#x27;s slowed down. My analysts, Sam and Sarah, can&#x27;t keep up\u2014they&#x27;re rushing stuff out half-baked. The testers are drowning in bugs. We&#x27;ve got developers sitting in stand-ups asking, \u201cIs there anything ready for us to pick up?\u201d and the answer is always \u201cnot quite.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYou broke your Timer Team.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI broke it.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt happens. It always feels like the obvious move.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo what do I do? I can&#x27;t exactly fire the developers I just hired.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "It&#x27;s a fair question. And the logical answer\u2014just stop the developers from working so much\u2014sounds sensible, but never works."
+      },
+      {
+        "type": "paragraph",
+        "text": "It&#x27;s like asking Annie to slow the bus down, and asking the bomb\u2014very nicely\u2014not to explode."
+      },
+      {
+        "type": "paragraph",
+        "text": "I&#x27;ve never found a way to make developers idle for more than a couple of days. It&#x27;s not in their nature. And their managers won&#x27;t stand for it."
+      },
+      {
+        "type": "paragraph",
+        "text": "So we need to be cleverer than that."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIs there any work your developers could do that doesn&#x27;t need much analysis or testing time?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He paused. \u201cThat&#x27;s a good question. I hadn&#x27;t thought about it.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Another pause. \u201cActually \u2026 maybe. We&#x27;ve got a backlog of technical debt. Refactoring. Performance improvements. Stuff that doesn&#x27;t need much analysis or testing.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cGreat,\u201d I said. \u201cTim, have any of your developers been around long enough that they&#x27;ve got good product knowledge?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cA few. Marcus has been here for five years. He knows the system better than anyone.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cBetter than Sam and Sarah?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIn some areas, yes.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat&#x27;s stopping him from helping them?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHe&#x27;s too busy.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said nothing. I knew what was coming."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cToo busy coding,\u201d Tim said, \u201cwhich is the problem, right?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cWhat if Marcus spent two or three days a week working with the analysts? Not doing their job\u2014helping them. Thinking through edge cases. Spotting technical landmines before they&#x27;re in the spec. Sitting in on conversations with users.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHe&#x27;d probably love that, actually. He&#x27;s always complaining that he finds out about requirements too late.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThere you go. You&#x27;re not losing a developer. You&#x27;re gaining analyst capacity\u2014using someone who already knows the product.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tim was quiet for a moment. \u201cWhat about my testers? They&#x27;re overwhelmed.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHow so?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThere\u2019s just far too much for them to test. And since some of Sam and Sarah\u2019s work has been half-baked, they\u2019re finding a lot of bugs, which is causing them a lot of admin and retesting. Our quality used to be much better.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cThis is a silly question, but I don\u2019t suppose you have any developers who love testing?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He laughed. \u201cNo, and even if we did, we wouldn\u2019t let them\u2014they\u2019re not good at it, and they moan a lot.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I said, \u201cDevelopers are good at automating stuff. Could some of them automate more tests and build up testing capacity that way? Or, could they automate setting up test data? There must be ways the developers can help the testers, without actually doing manual testing.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI don\u2019t know.\u201d Another pause. \u201cI need to talk to my team. Ask them. They&#x27;ll have much better ideas I haven&#x27;t thought of.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He was right. Every team is different. The principle is the same\u2014use your excess capacity to support your bottleneck\u2014but the specifics? His team would know better than either of us."
+      }
+    ]
+  },
+  {
+    "title": "Part 2: Protect, Grow, and Look Wider",
+    "content": []
+  },
+  {
+    "title": "Chapter 7: When Users Can&#x27;t Keep Up",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "So far, we&#x27;ve looked at the flow of work through the team. Product analysts upstream, feeding the developers. Testers downstream, giving fast feedback. The hourglass shape. The Timer Team."
+      },
+      {
+        "type": "paragraph",
+        "text": "Removing bottlenecks is, generally speaking, like unkinking a garden hose. You turn on the tap, but nothing comes out. So you walk along the hose, find the kink, straighten it\u2014and suddenly the water flows."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what we&#x27;ve been doing. Finding the kinks. Removing them. Getting the work flowing."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the flow doesn&#x27;t stop when the software leaves the team."
+      },
+      {
+        "type": "paragraph",
+        "text": "After the developers finish and the testers sign off, the work moves on. To operations. To deployment. To production. And eventually\u2014to the users."
+      },
+      {
+        "type": "paragraph",
+        "text": "I&#x27;m not going to talk about operations\u2014the DevOps world has that covered\u2014but there is one link in the chain that doesn&#x27;t get enough attention."
+      },
+      {
+        "type": "paragraph",
+        "text": "The users."
+      },
+      {
+        "type": "paragraph",
+        "text": "They&#x27;re the ones who have to absorb the change. Learn the new features. Adjust their workflows. Figure out what&#x27;s different."
+      },
+      {
+        "type": "paragraph",
+        "text": "And they can only absorb so much."
+      },
+      {
+        "type": "paragraph",
+        "text": "Yesterday, I was watering the garden, and my dog came over, excited. She loves drinking from the hose. But she can&#x27;t, not really. The water blasts out, goes everywhere, and she gets a mouthful at best. Most of it just sprays past her."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ship too fast, and your users are like my dog. The software&#x27;s fine. There&#x27;s just too much of it, too quickly. They can&#x27;t swallow it."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "I first noticed this years ago while consulting for a government department. They&#x27;d spent two years turning themselves into a good, solid Agile team. They&#x27;d figured out the Timer Team shape before I had a name for it. Work flowed. Releases were frequent. By every internal measure, they were flying."
+      },
+      {
+        "type": "paragraph",
+        "text": "But something was going wrong out in the field."
+      },
+      {
+        "type": "paragraph",
+        "text": "The department had hundreds of offices spread across the country\u2014places where citizens would come for help with benefits and payments. The staff in those offices used the software that the Agile team was building."
+      },
+      {
+        "type": "paragraph",
+        "text": "The staff used to complain about how bad the software was, and how badly it needed fixing, but now that their software teams (off in HQ) had sped up so much, they suddenly had something new to complain about."
+      },
+      {
+        "type": "paragraph",
+        "text": "The user interface they\u2019d been using for years kept changing, and it broke their \u201cmuscle memory\u201d and slowed them down."
+      },
+      {
+        "type": "paragraph",
+        "text": "They couldn\u2019t keep up with the pace of change."
+      },
+      {
+        "type": "paragraph",
+        "text": "Worse\u2014almost every release implemented an official policy change."
+      },
+      {
+        "type": "paragraph",
+        "text": "The staff started losing track. Which policy was current? What changed last Tuesday? They were giving incorrect advice. Sometimes, citizens received the wrong payments\u2014either too much or too little. Real money. Real consequences. The staff were making mistakes and then spending hours trying to fix them. Doh."
+      },
+      {
+        "type": "paragraph",
+        "text": "It was like they were playing Tetris. And some unseen force kept dropping shapes faster and faster."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Agile team had no idea this was happening. Their dashboards looked great. They won an award."
+      },
+      {
+        "type": "paragraph",
+        "text": "Isn\u2019t it weird how the world works? The Agile team had done everything right\u2014and created a mess."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>Speed without absorption isn&#x27;t speed.</strong>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Remember the bus in <em>Speed</em>, tearing through Los Angeles? It was going fast\u2014but the people in its path were getting hurt. Pedestrians diving out of the way. Cars smashed aside. Damage everywhere."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what was happening to those field staff and the citizens they served. The Agile team was the bus. The users were the bystanders."
+      },
+      {
+        "type": "paragraph",
+        "text": "The team looks fast. The pipeline looks healthy. The release notes are impressive."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the value isn&#x27;t landing. And people are getting hurt."
+      },
+      {
+        "type": "paragraph",
+        "text": "When this happens, the fix isn&#x27;t \u201cship even more.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "The fix is to slow down and think\u2014be thoughtful. Pace the changes. Batch them. Give users time to adapt. It\u2019s an easy problem to solve\u2014once you\u2019re aware of it."
+      },
+      {
+        "type": "paragraph",
+        "text": "You&#x27;ve unkinked the hose. Now ease off the tap."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 8: Protect Your Timer Team",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Once you&#x27;ve got a Timer Team, your #1 job is to protect it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Timer Teams are like a spinning top\u2014fast-moving, beautifully stable, until you stop paying attention."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then they wobble and fall."
+      },
+      {
+        "type": "paragraph",
+        "text": "Let me tell you about a project I worked on."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eighty developers. Chaos. The developers were running so much faster than the testers that the testing team had stopped working with them altogether, packed their bags, and decamped to a separate building, where they kept themselves busy testing code that had been produced several sprints earlier."
+      },
+      {
+        "type": "paragraph",
+        "text": "I was called in to rescue the project, and the problem was immediately obvious."
+      },
+      {
+        "type": "paragraph",
+        "text": "The team wasn&#x27;t producing potentially shippable software at the end of every sprint\u2014the <em>one thing</em> Agile has to get right for anything else to work."
+      },
+      {
+        "type": "paragraph",
+        "text": "So we set about reshaping the team into a U-shape\u2014the only way they could ever actually ship."
+      },
+      {
+        "type": "paragraph",
+        "text": "After about six months, they had a Timer Team. A bit ugly looking, with plenty of room to improve. But it worked. They started shipping. They started making money."
+      },
+      {
+        "type": "paragraph",
+        "text": "And\u2014this puts a smile on my face as I think about it\u2014they&#x27;d started to like each other again. Many of them had been friends before the chaos\u2014pub on Friday evenings, that sort of thing. But when the test team split off to a separate building, those friendships stopped during work hours. Developers and testers became \u201cthem and us.\u201d Now they were \u201cwe\u201d again."
+      },
+      {
+        "type": "paragraph",
+        "text": "And that&#x27;s when things started to slip."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Another project started. One of the analysts was moved to that project. Everything was still okay."
+      },
+      {
+        "type": "paragraph",
+        "text": "A month later, another analyst left to join another company."
+      },
+      {
+        "type": "paragraph",
+        "text": "Shortly after that, another analyst went on maternity leave."
+      },
+      {
+        "type": "paragraph",
+        "text": "Three analysts. Gone."
+      },
+      {
+        "type": "paragraph",
+        "text": "All for good reasons. None of them malicious. But nobody backfilled. After all, things were going so smoothly\u2014surely we can manage with a bit fewer?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The hourglass had become a bottle. Neck at the top. Not enough sand getting through."
+      },
+      {
+        "type": "paragraph",
+        "text": "There were no longer enough analysts to feed the developers. So they started cutting corners\u2014cherry-picking work that was easy to prepare but took the developers a long time to build. Clever, when you think about it. But commercially, not so smart."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "The testers had a different problem."
+      },
+      {
+        "type": "paragraph",
+        "text": "For years, they&#x27;d been under enormous pressure\u2014always behind, always scrambling. Now, for the first time, they had breathing room. So they did the sensible thing: they started cross-training, learning how to test different parts of the system."
+      },
+      {
+        "type": "paragraph",
+        "text": "A really good idea. Except that it used up all their spare capacity. They couldn&#x27;t give fast feedback anymore. The developers started pulling ahead. They started to drift apart. And no one noticed, for a few weeks."
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>Job number one</strong>: give fast feedback."
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>Job number two</strong>: build system knowledge\u2014but not at the expense of fast feedback and flow."
+      },
+      {
+        "type": "paragraph",
+        "text": "Spare capacity isn&#x27;t wasted capacity. It&#x27;s what makes the shape work. It&#x27;s what lets the testers give fast feedback."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Timer Team shape isn&#x27;t natural. It takes effort to maintain\u2014constant, uncomfortable effort."
+      },
+      {
+        "type": "paragraph",
+        "text": "The two situations were slightly different. The analysts\u2014we lost people. Nobody backfilled. The testers\u2014we kept the people, but they used up their slack. Same result: the shape broke."
+      },
+      {
+        "type": "paragraph",
+        "text": "Protect your headcount. Protect your slack."
+      },
+      {
+        "type": "paragraph",
+        "text": "When things are going well, it&#x27;s tempting to relax. The team is humming. Delivery is flowing. Everyone is happy. Surely we can move an analyst here. Skip a backfill there. Use up that spare capacity on something useful."
+      },
+      {
+        "type": "paragraph",
+        "text": "All for good reasons."
+      },
+      {
+        "type": "paragraph",
+        "text": "The natural state\u2014the comfortable state\u2014is for everyone to be equally busy. Fully utilized. No slack anywhere."
+      },
+      {
+        "type": "paragraph",
+        "text": "But that&#x27;s exactly when the problems start."
+      },
+      {
+        "type": "paragraph",
+        "text": "A Timer Team doesn&#x27;t protect itself. You have to protect it."
+      },
+      {
+        "type": "paragraph",
+        "text": "And once you&#x27;ve protected it\u2014then you can grow it."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 9: Growing the Bottleneck",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Several years after those conversations in Edinburgh, Rosie&#x27;s company hired me as a consultant. I hadn&#x27;t seen her since the good old days."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cRemember when you helped me set up my team?\u201d she said. \u201cTesters, analysts, and all that?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOf course.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt worked. The team is still running well. But now I\u2019ve got a new challenge.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOh?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThe business is growing. We need to go faster, and I need to grow the team.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I nodded."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cObviously, my first thought is that I should hire more developers. But I know that I can&#x27;t just add developers without adding capacity in the other roles too. So I&#x27;ve got a plan\u2014hire people who can flex. An analyst-programmer. A developer who&#x27;s good at helping testers with automation. That way, I&#x27;m growing capacity in multiple places at once.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSmart.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd actually,\u201d she said, \u201cbecause we&#x27;re working well with one analyst for every three developers, I don&#x27;t need to hire many new analysts. Three more developers, one more analyst. The ratio works in my favor. Same idea with testers.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat else have you thought about?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She paused. \u201cDunno. That&#x27;s why we&#x27;re talking.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHave you ever been to a museum?\u201d I asked."
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked at me sideways. \u201cWhat&#x27;s that got to do with anything?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cBear with me. A museum has limited display space. Precious space. They can&#x27;t show everything. So the curator chooses very carefully what goes on display.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOkay \u2026\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIf they choose big pieces, they can only display a few. If they choose smaller pieces, they can display many. Same size room. Very different results.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She raised an eyebrow. \u201cAnd you&#x27;re saying my developers are somehow like the display space?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cKinda. Your developers are the precious resource. The bottleneck. And the work you feed them is like the art you choose to display.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cGive me an example.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cImagine you&#x27;ve got two feature requests coming in from marketing. As far as you can tell, they&#x27;re equal in value to the customer. Both need the same amount of analyst time. Both need the same amount of testing. But one requires three weeks of developer time, and the other requires one week. Which one should you choose?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThen all things being equal, we&#x27;d do the one-week one first,\u201d she said. \u201cWe&#x27;d get more value through the bottleneck.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cExactly. That&#x27;s curation. Prioritizing work that uses less precious developer time\u2014for the same customer value.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThat&#x27;s clever and obvious at the same time,\u201d Rosie said. \u201cWe\u2019d use the same principle if we had one feature that had two possible solutions, and they required different analysis, developer, and testing time, right?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYes. You\u2019ve got it,\u201d I said, then added an important warning. \u201cBut, look, you&#x27;ve got to be careful\u2014if you keep picking work that&#x27;s light on developers but heavy on the other roles, you risk turning those other roles into bottlenecks.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She considered this for a moment. \u201cSo, we curate the work, but protect the shape.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cExactly.\u201d"
+      }
+    ]
+  },
+  {
+    "title": "Part 3: The People Who Make Teams Work",
+    "content": []
+  },
+  {
+    "title": "Chapter 10: Scrum Masters and Delivery Managers",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "When Scrum Masters (and similar roles) have enough capacity, everything runs smoothly. Like a well-oiled machine. Why? Because they have time to add the oil."
+      },
+      {
+        "type": "paragraph",
+        "text": "A big part of their job is creating Timer Teams, protecting them, and helping them grow. But day-to-day, well-shaped Timer Teams will underperform if their Scrum Master is overloaded and has become a bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "When they&#x27;re spread too thin, the gears get stuck. The makers blame them. Think they&#x27;re incompetent. But it&#x27;s usually not competence. It&#x27;s capacity."
+      },
+      {
+        "type": "paragraph",
+        "text": "Back in 2004, I was working as a Scrum Master on a nonsoftware project. The details don&#x27;t matter."
+      },
+      {
+        "type": "paragraph",
+        "text": "I took on one team. It went well. Great feedback. I was loving it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then I took on a second team. Still fine. More compliments. Feeling rather heroic."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then a third."
+      },
+      {
+        "type": "paragraph",
+        "text": "That third team was like the straw that broke the camel&#x27;s back\u2014except it wasn&#x27;t gradual. One week, everything was fine. The next week, it wasn&#x27;t. My teams started drifting. Small problems I would have caught early turned into big problems. I was firefighting constantly, spinning too many plates."
+      },
+      {
+        "type": "paragraph",
+        "text": "I still felt heroic, but truthfully, I wasn&#x27;t doing a good job. It\u2019s important to point that out because a lot of us \u201chelpers\u201d are wired that way."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then a colleague said something that stuck with me: \u201cYou&#x27;re like a coxswain in a rowing boat. Yes, you add weight, but you keep everyone rowing in sync, and the boat goes faster because of you. But you can&#x27;t cox three boats at once.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She was right. Stand-ups still happened. Some impediments got removed. But the watching, the noticing, the improving\u2014all that quiet Scrum Master stuff that no one else notices had disappeared."
+      },
+      {
+        "type": "paragraph",
+        "text": "To be clear: spreading one Scrum Master across three or four teams can work\u2014when the teams are stable, the system is healthy, and the job is mostly light steering."
+      },
+      {
+        "type": "paragraph",
+        "text": "But there&#x27;s a tipping point. And you often don&#x27;t see it coming until you&#x27;ve passed it."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what makes this so insidious. When a Scrum Master is doing their job well, it looks like they have spare time. So someone gives them another team."
+      },
+      {
+        "type": "paragraph",
+        "text": "And just like that, you&#x27;ve turned a good Scrum Master into a mediocre one\u2014and good teams into mediocre teams."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 11: The Tech Lead Problem",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "I was hired to help out two midlevel leaders at a media company\u2014a lead analyst and a tech lead called Nigel. Their team had grown since business was good, and they\u2019d split one larger team into several smaller teams. Logical and sensible."
+      },
+      {
+        "type": "paragraph",
+        "text": "But one team in particular wasn\u2019t performing well."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt\u2019s this team of three,\u201d Nigel said. \u201cThey\u2019ve got a backlog of bugs that keeps growing. The more work they do, the more bugs they produce.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat do you think is going on?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He shrugged. \u201cI sometimes wonder if all they\u2019re doing is writing bugs. But honestly, I don\u2019t know. I haven\u2019t had time to dig in.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "There it was."
+      },
+      {
+        "type": "paragraph",
+        "text": "Whenever you hear someone say that they haven\u2019t had time to do part of their job\u2014that\u2019s a warning sign. It means they can\u2019t keep up with their workload. It means they are a bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "And bottlenecks slow everyone down."
+      },
+      {
+        "type": "paragraph",
+        "text": "Unfortunately, I didn\u2019t pick up on it immediately. It took another couple of conversations before we all realized what was happening."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cNigel, those three developers\u2014how experienced are they?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cFairly junior. They\u2019re good, but they need guidance.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd who\u2019s giving them that guidance?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He paused. \u201cMe. I mean, I\u2019m supposed to be.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I frowned. \u201cHow often do you actually work with them?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "A long silence. \u201cNot enough. I\u2019ve got four teams now. I check in when I can, but \u2026\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cBut they\u2019re not getting the coaching they need.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He stared at the table. \u201cNo. They\u2019re not.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "It was like a little bus with three people on it, driving around, crashing into things\u2014because they hadn\u2019t been taught how to drive properly yet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nigel looked up. \u201cSo all those bugs. All that rework. That\u2019s because of me?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt\u2019s because you\u2019re spread too thin.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He wasn\u2019t happy about that. But he couldn\u2019t argue with it either."
+      },
+      {
+        "type": "paragraph",
+        "text": "We talked for a few more minutes and came up with a handful of possible solutions:"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u2022\tShut down the team and move the junior devs onto other teams where they can be properly mentored."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u2022\tPromote a senior developer to become a second tech lead."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u2022\tMove an experienced developer onto the struggling team as a day-to-day mentor."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u2022\tHave Nigel focus most of his attention on the weakest team until they&#x27;re self-sufficient."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nigel decided to shut down the team and promote a senior developer to become a second tech lead."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThose junior developers deserved better than that. And their project wasn&#x27;t all that important anyway\u2014which is why I gave them less attention, I suppose.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nigel&#x27;s problem is common. Leaders at every level get spread too thin\u2014tech leads, delivery managers, directors, and executives. It&#x27;s not just the norm\u2014it&#x27;s often the expectation. Being overwhelmed is worn like a badge of honor."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the best leaders I&#x27;ve worked with aren&#x27;t overwhelmed. They&#x27;re not spreading themselves too thin. And that&#x27;s not by accident\u2014they&#x27;ve learned to protect their capacity the same way a Timer Team protects its shape."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 12: The Hardest Lesson",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "For twenty years, I felt guilty."
+      },
+      {
+        "type": "paragraph",
+        "text": "I&#x27;d set up my work life so that I wasn&#x27;t busy all the time. Deliberately. And it felt like cheating."
+      },
+      {
+        "type": "paragraph",
+        "text": "I tried to hide it because it looked bad."
+      },
+      {
+        "type": "paragraph",
+        "text": "But I got results. And I got paid a big salary and big bonuses because of those results."
+      },
+      {
+        "type": "paragraph",
+        "text": "But it felt wrong."
+      },
+      {
+        "type": "paragraph",
+        "text": "Everyone around me wore exhaustion like a badge of honor. Back-to-back meetings. Overflowing inboxes. \u201cSorry, I&#x27;m slammed\u201d as a greeting. They were busy being busy. And there I was\u2014with gaps in my calendar. On purpose."
+      },
+      {
+        "type": "paragraph",
+        "text": "For most of my thirties and forties, I couldn&#x27;t shake the guilt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then, in my early fifties, I got a personal trainer. I learned two lessons from her. And the guilt finally made sense (and then it disappeared)."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Let&#x27;s start with the second lesson."
+      },
+      {
+        "type": "paragraph",
+        "text": "My personal trainer\u2014I&#x27;ll call her B\u2014only schedules twenty hours a week with clients."
+      },
+      {
+        "type": "paragraph",
+        "text": "I asked her about it one day, after a session."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTwenty hours seems low,\u201d I said. \u201cYou could fit in more, couldn&#x27;t you? Double your income.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She shook her head. \u201cI could. But I&#x27;d be worse at my job.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHow come?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTwo reasons,\u201d she said. \u201cFirst\u2014this work is hard. Physically, mentally, and emotionally. If I do more than twenty hours of sessions, I wear myself out. I get tired. I get sloppy. My clients get a worse version of me.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "That sounded familiar. My work was the same."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd the second reason?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cMy clients pay good money. They expect me to be flexible when life gets in the way. Their meeting runs late. Their kid gets sick. Something comes up. If I&#x27;m booked back-to-back with no gaps, I can&#x27;t flex. I have to say no. And they feel like they&#x27;re not getting what they paid for.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo you leave gaps on purpose.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI only book in twenty hours,\u201d she said. \u201cBut it&#x27;s not like I work only twenty hours. I have plenty of other stuff to do during that time. Admin, planning, and my own training. I just don&#x27;t commit it to clients.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo you&#x27;ve got flexibility.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cExactly. If someone needs to reschedule, I can. If I&#x27;m tired, I&#x27;ve got breathing room. If something comes up, I&#x27;m not scrambling.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I sat with that for a moment. I&#x27;d known this for years. But I&#x27;d never heard anyone else describe it so simply."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Now here&#x27;s the first lesson."
+      },
+      {
+        "type": "paragraph",
+        "text": "After my very first session with her, I was buzzing. Energized. Enthusiastic. I wanted more."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThis was great,\u201d I said. \u201cCan we do four sessions a week instead of two?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked at me. \u201cNo.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I looked at her with a \u2018huh?\u2019 face."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIf I let you do four sessions a week, you&#x27;ll be sore all the time. You&#x27;ll dread coming in. You&#x27;ll start canceling. Within a month, you&#x27;ll quit. You need time to recover.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She paused."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cBurnt-out clients don&#x27;t come back. They don&#x27;t get the results they wanted. And I lose them. That\u2019s bad for them, and bad for my business.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I frowned, disappointed. I&#x27;d never wanted to go to the gym before. \u201cSo two sessions are better for me?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTwo sessions are better for both of us. You make progress. You don&#x27;t hate it. You keep coming back. And I keep a client.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She was right. I&#x27;ve been going back for years now, and that\u2019s only because she didn&#x27;t let me scare myself away."
+      },
+      {
+        "type": "paragraph",
+        "text": "B didn\u2019t overbook herself, and she didn\u2019t let me overbook myself."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "When I saw how she worked, something clicked."
+      },
+      {
+        "type": "paragraph",
+        "text": "For twenty years, I&#x27;d been doing the same thing\u2014pacing my clients, keeping slack in my calendar\u2014but feeling guilty about it. I&#x27;d never had a role model. Everyone around me was busy being busy. I was the odd one out, and I knew that some people thought I was lazy (despite the results I was getting)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Turns out, personal trainers figured this out long ago. They just don&#x27;t write business books about it."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Let\u2019s step back and take a breath."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sometimes the bottleneck is you\u2014you\u2019re too busy to be any good."
+      },
+      {
+        "type": "paragraph",
+        "text": "But here&#x27;s the thing: the higher you climb, the harder this gets. And the more it matters."
+      },
+      {
+        "type": "paragraph",
+        "text": "When a Scrum Master is stretched too thin, a few teams suffer. When a Tech Lead can&#x27;t coach their juniors, bugs pile up."
+      },
+      {
+        "type": "paragraph",
+        "text": "But when a senior leader becomes the bottleneck\u2014when the person setting direction for dozens or hundreds of people is too overwhelmed to think\u2014the whole organization runs in the wrong direction."
+      },
+      {
+        "type": "paragraph",
+        "text": "In a Timer Team, everyone else exists to protect the bottleneck&#x27;s capacity for the work that matters most. The same principle applies to leaders."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s a different scale of problem."
+      },
+      {
+        "type": "paragraph",
+        "text": "And it needs a different chapter (or three, actually)."
+      }
+    ]
+  },
+  {
+    "title": "Part 4: When the Bottleneck Is at the Top",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "We&#x27;ve shaped the teams. Now we shape the leadership."
+      },
+      {
+        "type": "paragraph",
+        "text": "Everything in Parts 1-3 assumes the leaders have time to do this work. But what happens when they don&#x27;t? What happens when they&#x27;re the bottleneck?"
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s often where we have to start."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 13: The Big Cheese Bottleneck",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "I&#x27;d been brought in to help a company&#x27;s senior leaders use the <em>Theory of Constraints</em> (what I call <em>Bottleneck Thinking</em>) better in practice. They already knew about bottlenecks\u2014the founder was a genius who&#x27;d built the business on ToC, and many of the staff had extensive training in it. But knowing the theory and putting it into practice are two different things. Especially when the bottleneck is a person."
+      },
+      {
+        "type": "paragraph",
+        "text": "Brie was one of the product leaders. She had a staff of twenty-five and a huge demand for more software. I first met with her entire team. I had my bottleneck detective hat on, watching, listening, and trying to figure out where the bottleneck was."
+      },
+      {
+        "type": "paragraph",
+        "text": "It didn&#x27;t take long."
+      },
+      {
+        "type": "paragraph",
+        "text": "Every question came back to Brie. Every decision waited for Brie. Every escalation landed on Brie&#x27;s desk. She was running the meeting, answering the questions, solving the problems, and reassuring the team. Heroic. Impressive. And completely unsustainable."
+      },
+      {
+        "type": "paragraph",
+        "text": "After the meeting, I pulled aside one of her peers."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIs Brie always this stretched?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "He laughed. \u201cAlways. For years. That&#x27;s just Brie.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s how you know it&#x27;s a bottleneck. When everyone&#x27;s so used to it, they&#x27;ve stopped seeing it."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "The thing is, everyone could kind of see it. And everyone was blind to it. Both at the same time."
+      },
+      {
+        "type": "paragraph",
+        "text": "This hadn&#x27;t just suddenly happened. It had crept up slowly\u2014Brie taking on more, coping, succeeding, and drowning. So gradually that it became normal. The company had grown around her bottleneck. They&#x27;d adapted to her speed without realizing it. She never complained. She always delivered. So they didn&#x27;t see a bottleneck. They just saw Brie."
+      },
+      {
+        "type": "paragraph",
+        "text": "(Brie isn&#x27;t her real name\u2014but her story is.)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Without saying anything in front of the team, I suggested we set up a 1:1."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI&#x27;m not really the bottleneck,\u201d she said when we met. \u201cI still cope.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She wasn&#x27;t defensive. She was curious, thoughtful, and genuine. The kind of leader people respect because she respects them. But she couldn&#x27;t see what everyone else could see\u2014because she was too busy coping to notice."
+      },
+      {
+        "type": "paragraph",
+        "text": "I drew three circles on a whiteboard. A Venn diagram."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cLeaders usually have three jobs,\u201d I said. \u201cLeading. Managing. Being an expert. Which of these are you doing?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked at the diagram. \u201cAll three.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIn my experience,\u201d I said, \u201ca lot of very good leaders get so overwhelmed with all the managing and expertise stuff that they inadvertently sacrifice their leadership work.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked at the diagram again. \u201cThe thinking-ahead stuff. Setting direction.\u201d She nodded slowly. \u201cThere&#x27;s never time for that. The other two are too urgent.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThere&#x27;s a fourth thing that&#x27;s not on the diagram,\u201d I said. \u201cYour life outside of work.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She paused. Snorted."
+      },
+      {
+        "type": "paragraph",
+        "text": "She answered indirectly. \u201cI used to do Pilates,\u201d she said. \u201cFifteen years ago. I keep telling myself I&#x27;ll go back when things calm down.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHave they?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She smiled, but it wasn&#x27;t a happy smile. \u201cNo. Not yet. I remain hopeful.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "There&#x27;s a pattern here, and it&#x27;s worth understanding."
+      },
+      {
+        "type": "paragraph",
+        "text": "Leaders often have three jobs: leading, managing, and being an expert. When they get stretched too thin, one has to give\u2014and it&#x27;s almost always leadership first."
+      },
+      {
+        "type": "paragraph",
+        "text": "Why? Because the other two are urgent. Stop sharing your expertise, and people get stuck. They come knocking. Stop managing\u2014vacation requests pile up, timesheets go unsigned\u2014and people complain. Loudly."
+      },
+      {
+        "type": "paragraph",
+        "text": "But leadership? Setting direction, coaching, and thinking ahead? That&#x27;s important, but it&#x27;s not urgent. No one knocks on your door because you haven&#x27;t thought about next quarter. No one sends a chasing email because you skipped a coaching conversation. The pain comes later\u2014in bugs, in rework, and in teams that drift off course."
+      },
+      {
+        "type": "paragraph",
+        "text": "Brie was doing all three jobs, and day to day, the team was zooming, hyperproductive. But leadership was suffering. Brie still needed to sleep."
+      },
+      {
+        "type": "paragraph",
+        "text": "And there&#x27;s a fourth thing that drops too\u2014often before leadership does. Their personal life. Their family. Their health. Their hobbies. Their time to just be a person. That&#x27;s what gets sacrificed first, and it&#x27;s often what gets recovered last."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fifteen years without Pilates. That&#x27;s not a scheduling problem. That&#x27;s a life."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>So how does a good leader end up here?</em>"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Brie&#x27;s story, like so many others, started with success."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sometimes it&#x27;s a new project that gets greenlit. Sometimes it&#x27;s a market shift that sends demand through the roof. For Brie, the world changed one day, causing a wave of demand no one could have ever predicted. Her company was successful\u2014and then it suddenly exploded (in a good way, not like the bus). Sales soared, and the operational side of the business couldn&#x27;t keep up manually. They needed to automate, fast. Which meant they needed more software, fast. Which meant they needed Brie&#x27;s teams to grow, fast."
+      },
+      {
+        "type": "paragraph",
+        "text": "At first, she was happy. Then reality set in."
+      },
+      {
+        "type": "paragraph",
+        "text": "Growth needs people. The company hires. And who&#x27;s responsible for all these new people? The senior leader. Suddenly, they&#x27;re doing the job of two or three people. They struggle to keep up. They&#x27;re so busy managing, they don&#x27;t have time to lead."
+      },
+      {
+        "type": "paragraph",
+        "text": "They&#x27;ve become the bottleneck\u2014the neck at the very top of the hourglass, with not enough sand getting through. The problem is, they don&#x27;t realize it. Or they don&#x27;t want to admit it. And they&#x27;re often very good at hiding it from everyone else."
+      },
+      {
+        "type": "paragraph",
+        "text": "Brie had a staff of twenty-five when I met her. She was already maxed out. And now the company needed her to grow."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI thought I&#x27;d be excited,\u201d she told me. \u201cWe were growing. We were winning. But I just felt \u2026 underwater.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "I&#x27;ve watched leaders do this, and it&#x27;s painful to see. They buy a time management book, but don&#x27;t have time to read it. They take a productivity course, but don&#x27;t have time to watch it. They start working later and later, telling themselves they&#x27;re being heroic. They start micromanaging because it&#x27;s easier to do it themselves than to explain it."
+      },
+      {
+        "type": "paragraph",
+        "text": "And they feel guilty for sacrificing their family time. They feel incompetent sometimes\u2014but really they&#x27;re just overwhelmed. Deep inside, they start to begrudge the staff who protect their personal time, though they never say it. They reward the others who sacrifice their own lives. They start to think that being thick-skinned is a virtue."
+      },
+      {
+        "type": "paragraph",
+        "text": "Underneath it all, they believe the problem is their time management. They believe they&#x27;re not the bottleneck\u2014they&#x27;re just very busy. They believe that if they take a break, everything will break."
+      },
+      {
+        "type": "paragraph",
+        "text": "None of that is true."
+      },
+      {
+        "type": "paragraph",
+        "text": "What worked in quieter times no longer works."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>So how do you know if you&#x27;ve become the bottleneck?</em>"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHow do I know if I&#x27;m really the bottleneck?\u201d Brie asked."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTwo tells,\u201d I said. \u201cFirst: you&#x27;re working all the hours you can possibly find, and there&#x27;s still not enough.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She nodded slowly."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSecond: your inbox is a queue of waiting decisions. People are waiting for you. If people are always waiting for you, you&#x27;re the bottleneck. Your entire team runs at the speed of you.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She was quiet for a moment."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI have both of those,\u201d she said. \u201cI just didn&#x27;t know what to do about them.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Debottlenecking a leader is much more than time management. It&#x27;s learning to delegate. Learning to build teams. Learning how to make change without upsetting people. Learning how to grow the people who work with you\u2014in the same way you&#x27;re growing yourself, except that you&#x27;re just a few chapters ahead in the book."
+      },
+      {
+        "type": "paragraph",
+        "text": "It&#x27;s getting assistance. It&#x27;s making time to lead."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you don&#x27;t, your business can only grow as fast as you can. And you&#x27;re already maxed out."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>So where do you start?</em>"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHere&#x27;s where we start,\u201d I said. \u201cYou need time to lead. Just a little time. An hour a week.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI don&#x27;t have an hour.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cLet&#x27;s find out. Show me your calendar.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She turned her laptop toward me. Wall-to-wall meetings. Every day. For weeks."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThis one,\u201d I said, pointing. \u201cWhat&#x27;s this?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cStatus update. It&#x27;s been running for two years.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cDo you need to be there?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She hesitated. \u201cProbably not. Not anymore.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd this one?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThat&#x27;s \u2026 actually, I don&#x27;t know why I&#x27;m still in that one.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "We canceled two meetings in the first ten minutes."
+      },
+      {
+        "type": "paragraph",
+        "text": "And booked our next session."
+      },
+      {
+        "type": "paragraph",
+        "text": "We called the meeting \u201cTime to Think; Time to Lead.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s how it began."
+      },
+      {
+        "type": "paragraph",
+        "text": "Despite being the hardest worker in the company, Brie was standing between her company and its future. She was also the key to unlocking it."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 14: The Hermit Crab",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "At first, I thought of snakes\u2014they shed their skin as they grow, then grow some more, then shed again. But no one wants to be compared to a snake. And it felt too smooth, too linear. That wasn&#x27;t what Brie was experiencing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then I thought of hermit crabs."
+      },
+      {
+        "type": "paragraph",
+        "text": "Hermit crabs don&#x27;t have their own shell. They find one, climb in, and make it home. But as they grow, the shell gets tight. Eventually, it no longer fits. They have to leave."
+      },
+      {
+        "type": "paragraph",
+        "text": "And here&#x27;s the vulnerable part: they have to go naked. Just for a moment. Exposed. Soft. Unprotected. They dash across the sand and climb into a bigger shell."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then they do it all over again."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "You&#x27;re in a shell that fits. You know how to do this job. You&#x27;ve figured out the systems, the relationships, and the rhythms. It works."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then the company grows. Or your responsibilities expand. Or\u2014like Brie\u2014the world changes, and suddenly everything accelerates."
+      },
+      {
+        "type": "paragraph",
+        "text": "The shell doesn&#x27;t fit anymore. But you&#x27;re still in it, cramped, squeezed, and trying to do what you&#x27;ve always done. That&#x27;s when you become a bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "Growing to a bigger shell <em>is</em> debottlenecking. But it means leaving the old shell behind."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>So what does that actually mean?</em>"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat do I have to let go of?\u201d Brie asked me once."
+      },
+      {
+        "type": "paragraph",
+        "text": "It&#x27;s a hard question. The things that got you here won&#x27;t get you there\u2014but they feel like <em>you</em>. Your expertise. Your hands-on involvement. Your ability to answer every question. That&#x27;s who you&#x27;ve been."
+      },
+      {
+        "type": "paragraph",
+        "text": "In the old shell, Brie knew everything. She was on top of every project, every decision, and every detail. That&#x27;s what made her great."
+      },
+      {
+        "type": "paragraph",
+        "text": "In the new shell, she couldn&#x27;t be on top of everything. There was too much. She had to let other people know things. She had to trust them. She had to step back."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt feels like I&#x27;m becoming less useful,\u201d she said."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYou&#x27;re becoming useful in a different way,\u201d I said. \u201cThe old way doesn&#x27;t scale. The new way does.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>So what does growing through shells actually look like?</em>"
+      },
+      {
+        "type": "paragraph",
+        "text": "We worked together for four years. And in that time, Brie moved through several shells."
+      },
+      {
+        "type": "paragraph",
+        "text": "At twenty-five people, she could know everyone. She could be in every meeting. She could make every decision."
+      },
+      {
+        "type": "paragraph",
+        "text": "At fifty people, she couldn&#x27;t. She had to build a leadership team. She had to delegate whole areas, not just tasks."
+      },
+      {
+        "type": "paragraph",
+        "text": "At one hundred people, she had to delegate to people who delegated to others. She was two steps removed from the work. That felt strange."
+      },
+      {
+        "type": "paragraph",
+        "text": "At 200, 300, 400\u2014each time, another shell. Another moment of being naked and vulnerable. Another set of things to leave behind, another set of things to learn."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here&#x27;s the beautiful thing about hermit crabs."
+      },
+      {
+        "type": "paragraph",
+        "text": "When a bigger shell becomes available, they don&#x27;t just swap one at a time. They line up\u2014biggest to smallest\u2014and they all move up together. The big one takes the new shell. The next one takes the shell that the big one left behind. And so on, all the way down the line."
+      },
+      {
+        "type": "paragraph",
+        "text": "There are videos of this. David Attenborough narrated one. It&#x27;s awe-inspiring to watch."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what happened with Brie&#x27;s team."
+      },
+      {
+        "type": "paragraph",
+        "text": "When she moved to a bigger shell, the people below her had to grow too. Her senior leaders had to step up into the space she&#x27;d left. And <em>their</em> people had to step up into the space <em>they&#x27;d</em> left. The whole organization cascaded upward."
+      },
+      {
+        "type": "paragraph",
+        "text": "Every time we debottlenecked Brie, we had to debottleneck the next layer too. And the next. It was slow, careful work."
+      },
+      {
+        "type": "paragraph",
+        "text": "Hiring developers was easy\u2014they came with technical skills and could learn the codebase. But growing product people was slow. It required deep local knowledge. You couldn&#x27;t just hire it in. We had to grow it internally."
+      },
+      {
+        "type": "paragraph",
+        "text": "The team structure kept evolving over those four years. We worked hard to make sure we made those changes in ways that people liked. Brie told me later that people didn&#x27;t resist it. They welcomed it. Change didn&#x27;t have to mean upheaval. It could mean growth."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>So what was the biggest shift?</em>"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the biggest shifts was hiring a chief of staff."
+      },
+      {
+        "type": "paragraph",
+        "text": "Not an administrative assistant\u2014a chief of staff. Someone who could take the management load off Brie&#x27;s shoulders so she could focus on leading."
+      },
+      {
+        "type": "paragraph",
+        "text": "Leaders usually try to delegate their expertise first. It makes sense\u2014that&#x27;s the valuable stuff, the hard stuff. But expertise is hard to hand over. It takes years to build. You can&#x27;t just give it to someone."
+      },
+      {
+        "type": "paragraph",
+        "text": "Management is different. Management can be delegated\u2014if you find someone you trust, someone who knows how to get things done, and someone who can manage up when needed."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat&#x27;s the job description?\u201d Brie asked."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cDon&#x27;t write one,\u201d I said. \u201cFind someone you trust. Then tell them: figure out how to do your job.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked skeptical. But she tried it."
+      },
+      {
+        "type": "paragraph",
+        "text": "It was huge."
+      },
+      {
+        "type": "paragraph",
+        "text": "Her chief of staff took on the coordination, the scheduling, the follow-ups, and the operational rhythm. Brie got time back. Not just an hour a week anymore\u2014real time. Time to think. Time to lead."
+      },
+      {
+        "type": "paragraph",
+        "text": "As the organization grew, more of Brie&#x27;s executive-level leaders started bringing on their own chiefs of staff. At first, it was tricky\u2014they didn&#x27;t know how to delegate to them. They thought they needed to define every task, every responsibility."
+      },
+      {
+        "type": "paragraph",
+        "text": "The trick was simpler: find someone you trust who knows how to manage. Then let them figure out how to help you."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each new shell required new skills."
+      },
+      {
+        "type": "paragraph",
+        "text": "Brie had to learn to let go of details. She had to learn to trust people who weren&#x27;t as good as her\u2014yet. She had to learn to set direction without controlling execution. She had to learn to coach instead of fix."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI feel like I don&#x27;t know what I&#x27;m doing,\u201d she told me once, twice, a dozen times."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s the thing about really clever hermit crabs. They&#x27;re always moving to a bigger shell. Always moving out of their comfort zone. Always stretching. They make stuff up as they go along\u2014that&#x27;s almost their job description, just like Brie&#x27;s new chief of staff."
+      },
+      {
+        "type": "paragraph",
+        "text": "And they thrive."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "The hermit crab journey isn&#x27;t comfortable. You don&#x27;t get to stay in one shell forever. If your company is growing, if your responsibilities are expanding, and if the world is changing\u2014you have to keep moving."
+      },
+      {
+        "type": "paragraph",
+        "text": "Leave things behind. Learn new things. Go naked for a moment. Find the bigger shell."
+      },
+      {
+        "type": "paragraph",
+        "text": "Brie did it over and over. And so did her team, cascading up behind her."
+      },
+      {
+        "type": "paragraph",
+        "text": "But there was still a problem. Even with all this growth, even with the chief of staff, the evolving structure, and the new skills\u2014Brie was still drowning."
+      },
+      {
+        "type": "paragraph",
+        "text": "She was in a bigger shell. But she was still maxed out."
+      },
+      {
+        "type": "paragraph",
+        "text": "Something else had to change."
+      }
+    ]
+  },
+  {
+    "title": "Chapter 15: The Motorcade",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "The problem wasn&#x27;t Brie\u2019s capacity anymore. It was her attention."
+      },
+      {
+        "type": "paragraph",
+        "text": "As Brie&#x27;s team grew, she started more and more projects. All of them important. All of them competing for the same people, the same decisions, and the same slice of her attention."
+      },
+      {
+        "type": "paragraph",
+        "text": "Every project was slow. And Brie was exhausted\u2014constantly switching context, spinning plates, and putting out fires."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI feel like I&#x27;m running in every direction at once,\u201d she said. \u201cAnd I&#x27;m not getting anywhere.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She was right. The team was busy. Incredibly busy. Gridlocked."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "I asked her a question."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhen the president travels, how do they get across the city so fast?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked at me. \u201cMotorcade?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cRight. They don&#x27;t make the car go faster. They clear the road. Stop the cross-traffic. Remove the obstacles. The car moves at normal speed\u2014but nothing gets in its way.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She sat with that."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cSo instead of trying to go faster \u2026\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYou clear the road.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "We started by cutting the number of active projects. Drastically."
+      },
+      {
+        "type": "paragraph",
+        "text": "This was hard. Every project was important. Every project had a sponsor, a business case, and a team who&#x27;d been working on it. Telling people to stop felt wrong."
+      },
+      {
+        "type": "paragraph",
+        "text": "But she did it anyway."
+      },
+      {
+        "type": "paragraph",
+        "text": "One or two priorities got the green light\u2014the motorcade. Everything else could keep moving, but they had to stay out of the way. If the motorcade needed something\u2014a decision, a resource, or Brie&#x27;s attention\u2014it got priority. No exceptions."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat do I tell the other teams?\u201d Brie asked."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTell them they&#x27;re on hold. Tell them why. Tell them when you&#x27;ll come back to them.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThey won&#x27;t like it.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThey&#x27;ll like it better than being stuck in traffic forever.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "The priority projects flew through. They delivered faster than anything had before."
+      },
+      {
+        "type": "paragraph",
+        "text": "But here&#x27;s what surprised us: more stuff got done overall, not less."
+      },
+      {
+        "type": "paragraph",
+        "text": "While building the motorcade, Brie and her team worked hard to remove obstacles\u2014turning red traffic lights to green. Bottlenecks they\u2019d been too busy to see. Decisions that had been waiting for months. Permissions that no one had thought to grant."
+      },
+      {
+        "type": "paragraph",
+        "text": "For Brie, personally and professionally, the relief was enormous. She didn&#x27;t have to spin dozens of plates anymore. She didn&#x27;t have to hold everything in her head. She could focus on what mattered most and trust that the rest was moving."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI can actually think,\u201d she told me. \u201cI&#x27;d forgotten what that felt like.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Over time, the motorcade evolved into a priority lane\u2014like the fast lane on a motorway, but not for emergencies. For the most important work. The VIP projects that the business needed most. They had a clear path, always. Everything else flowed at its own pace, giving way when needed."
+      },
+      {
+        "type": "paragraph",
+        "text": "Without this, none of the other changes would have stuck. Brie would still have been drowning\u2014just with better-organized teams drowning alongside her."
+      },
+      {
+        "type": "paragraph",
+        "text": "The whole organization had become more aerodynamic. Shaped for speed. Not pushed."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "About three years in, Brie appeared on a video call one Friday evening. She was in Sydney. I was in New Zealand."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cClarke,\u201d she said. \u201cYou won&#x27;t believe it.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cTell me.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThis morning I went to Pilates.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I waited. There had to be more."
+      },
+      {
+        "type": "paragraph",
+        "text": "She looked at me, expectant. Like I should be amazed."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cClarke\u2014don\u2019t you remember what I told you when we first met?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I scrunched up my face, trying to remember."
+      },
+      {
+        "type": "paragraph",
+        "text": "She said, \u201cI told you that I used to love Pilates, and I&#x27;ve been wanting to go back for over fifteen years. Fifteen years! But I&#x27;ve never had the time. This morning I went. And I didn&#x27;t check my emails first. And I didn\u2019t check them when I got home. I showered, I had breakfast, and then\u2014after breakfast\u2014I finally checked my emails. It was 8:30 a.m., and I&#x27;d normally have been working two hours by then.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>Fifteen years</em>. She&#x27;d been so busy, so overwhelmed, that she couldn&#x27;t find one hour for herself. Not a holiday. Not a sabbatical. One hour."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what debottlenecking a leader actually looks like. Not just time to manage. <em>Time to think</em> creates <em>time to lead</em> creates <em>time to live</em>."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "When you debottleneck a leader, you&#x27;re not just making the business faster. You&#x27;re giving someone their life back."
+      },
+      {
+        "type": "paragraph",
+        "text": "Four years after we started, Brie (her real name was Angela) had a staff of over 400. The <em>Australian Financial Review</em> named her <em>Women in Leadership</em> winner for Tech and Telco in their annual awards."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what happens when you debottleneck the leader."
+      }
+    ]
+  },
+  {
+    "title": "What Now?",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "You&#x27;ve just read a short book with a lot of ideas in it. Hourglasses and hermit crabs. Buses and motorcades. Rules of thumb and shells that no longer fit."
+      },
+      {
+        "type": "paragraph",
+        "text": "But really, it all comes down to one word: aerodynamic."
+      },
+      {
+        "type": "paragraph",
+        "text": "You need to shape your teams and your leaders for aerodynamics."
+      },
+      {
+        "type": "paragraph",
+        "text": "That\u2019s how they go fast, in the right direction, without crashing into things."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>Welcome to the recombobulation zone.</em>"
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>Let&#x27;s bring it all together.</em>"
+      },
+      {
+        "type": "heading2",
+        "text": "Below Is the Overarching Idea in This Book"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every system has one bottleneck. Just one. That&#x27;s the theory."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>So why do so many teams have bottlenecks everywhere?</em>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Because they have too many developers. When you try to run at the speed of the developers, everyone else scrambles to keep up. It&#x27;s like being a kid running downhill\u2014legs going faster than they can carry you. You stumble. You fall. You skin your knees."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u2022\tAnalysts can&#x27;t feed their developers fast enough\u2014bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u2022\tTesters can&#x27;t give feedback fast enough\u2014bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u2022\tLeaders sacrifice their most important work\u2014bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "They all become bottlenecks. Real bottlenecks. Real problems. All caused by one wrong shape."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fix the shape, and they disappear."
+      },
+      {
+        "type": "heading2",
+        "text": "Part 1 Was for the People Closest to the Work"
+      },
+      {
+        "type": "paragraph",
+        "text": "Timer Teams. The hourglass shape. Developers in the middle\u2014the deliberate bottleneck. Testers downstream with enough capacity to give fast feedback. Analysts upstream with enough time to think."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two rules of thumb:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1.\tCan your testers give fast feedback? If not, you need more testing capacity."
+      },
+      {
+        "type": "paragraph",
+        "text": "2.\tDo your analysts have time to think\u2014without cutting corners? If not, you need more upstream capacity."
+      },
+      {
+        "type": "paragraph",
+        "text": "Your team probably already has the skills to figure this out. Once you see the shape, you&#x27;ll wonder why you didn&#x27;t see it before."
+      },
+      {
+        "type": "heading2",
+        "text": "Part 2 Was for the Managers"
+      },
+      {
+        "type": "paragraph",
+        "text": "Protect the shape. It&#x27;s not natural. It takes effort to maintain."
+      },
+      {
+        "type": "paragraph",
+        "text": "When things are going well, it&#x27;s tempting to relax. Move an analyst here. Skip a backfill there. Use up that spare capacity on something useful. All for good reasons."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the natural state\u2014the comfortable state\u2014is for everyone to be equally busy. Fully utilized. No slack anywhere. And that&#x27;s exactly when the problems start."
+      },
+      {
+        "type": "paragraph",
+        "text": "A Timer Team doesn&#x27;t protect itself. You have to protect it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Grow the bottleneck\u2014but keep it as the bottleneck. Sometimes that means hiring a developer. Sometimes that means hiring an analyst first. Or a tester. Curate the work. Find simpler solutions. Watch the shape."
+      },
+      {
+        "type": "paragraph",
+        "text": "Don&#x27;t flip the hourglass by accident."
+      },
+      {
+        "type": "heading2",
+        "text": "Part 3 Was for the People Who Make Teams Work"
+      },
+      {
+        "type": "paragraph",
+        "text": "Scrum Masters, Tech Leads, coaches, and delivery managers. When you&#x27;re spread too thin, teams suffer. But no one notices\u2014because you&#x27;re too good at coping."
+      },
+      {
+        "type": "paragraph",
+        "text": "And it&#x27;s not just you. It&#x27;s the leaders you work with. The senior people who set direction. When they&#x27;re overwhelmed, the whole organization runs in the wrong direction."
+      },
+      {
+        "type": "paragraph",
+        "text": "The lesson I learned from my personal trainer: pace the change. Keep slack in your calendar. Not laziness\u2014flexibility. Room to respond. Room to think."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sometimes the bottleneck is you\u2014and that robs you of the ability to be a great leader. Fix it."
+      },
+      {
+        "type": "heading2",
+        "text": "Part 4 Was for the Leaders"
+      },
+      {
+        "type": "paragraph",
+        "text": "When the bottleneck is at the top, debottlenecking is more than time management. It&#x27;s learning to delegate. Learning to build teams. Learning to grow."
+      },
+      {
+        "type": "paragraph",
+        "text": "Hermit crabs leave their shells when they get too tight. They go naked for a moment\u2014vulnerable, exposed\u2014and dash into a bigger shell. Then they do it again. And again."
+      },
+      {
+        "type": "paragraph",
+        "text": "That&#x27;s what growth looks like. Uncomfortable. Necessary. And when you grow, the people below you have to grow too. The whole line cascades upward."
+      },
+      {
+        "type": "paragraph",
+        "text": "But growth isn&#x27;t enough if you&#x27;re drowning in projects. Clear the road. Build the motorcade. Protect your attention for what matters most."
+      },
+      {
+        "type": "paragraph",
+        "text": "Time to think. Time to lead. Time to live."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "In his classic bestselling book <em>Good to Great</em>, Jim Collins famously said: Get the right people on the bus, the wrong people off the bus, and the right people in the right seats."
+      },
+      {
+        "type": "paragraph",
+        "text": "Yeah, I know. More buses."
+      },
+      {
+        "type": "paragraph",
+        "text": "He was right. And I&#x27;d add one thing."
+      },
+      {
+        "type": "paragraph",
+        "text": "You also need the right mix of people on the bus. The right numbers. The right proportions. The right shape."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you want your team to go fast\u2014in the right direction\u2014it needs to be shaped like an hourglass."
+      },
+      {
+        "type": "paragraph",
+        "text": "And if you want them to go even faster, don&#x27;t turn your good leaders into mediocre ones because they won&#x27;t have time to think, to lead, and to turn all the lights to green."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two rules of thumb. One shape. Everything changes."
+      },
+      {
+        "type": "paragraph",
+        "text": "Aerodynamics, not horsepower. That&#x27;s the whole book."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "If any of this resonated\u2014if you recognized your team in that bus, or yourself in Brie&#x27;s story\u2014I&#x27;d be happy to talk."
+      },
+      {
+        "type": "paragraph",
+        "text": "clarke@clarkeching.com"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "P.S. If you want to see what happens when you can&#x27;t put developers at the bottleneck\u2014when the rules don&#x27;t apply\u2014turn the page to read the afterword. <strong>Some say it&#x27;s the best part of the book.</strong>"
+      }
+    ]
+  },
+  {
+    "title": "Eve\u2019s Story - Don\u2019t Skip This",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "I need to make another confession."
+      },
+      {
+        "type": "paragraph",
+        "text": "Throughout this book, I\u2019ve said that the developers should be the bottleneck. No exceptions. Timer Teams, hourglass shape, every time."
+      },
+      {
+        "type": "paragraph",
+        "text": "But I\u2019ve been telling Eve\u2019s story at conferences for years\u2014and her team actually broke that rule."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>Why? What was different?</em>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Everything I\u2019ve told you so far assumes that you can choose where your bottleneck sits. Most teams can. You can hire more developers, or more testers, or more analysts. You can redistribute capacity. You can reshape."
+      },
+      {
+        "type": "paragraph",
+        "text": "But sometimes you can\u2019t."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eve\u2019s team was an exception. They weren\u2019t building new products\u2014they were fixing regulatory bugs in ancient code. And their real bottleneck was testing\u2014for reasons you\u2019ll see shortly. There was no way to increase testing capacity. It was fixed. Immovable."
+      },
+      {
+        "type": "paragraph",
+        "text": "If Eve had made developers the bottleneck, her testers would have had spare capacity\u2014which means they\u2019d have done <em>less</em> testing. Total output would have dropped."
+      },
+      {
+        "type": "paragraph",
+        "text": "So she did the opposite. She accepted testing as the bottleneck and reshaped everything else around it."
+      },
+      {
+        "type": "paragraph",
+        "text": "It\u2019s not a Timer Team. But the thinking is the same."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Several years ago, a CIO called Alfonzo asked me to speed up one of his software teams. He said the team was made up of the company\u2019s oldest, cleverest, and gnarliest programmers, and their job was to fix the oldest, ugliest, and gnarliest bugs in their old, ugly, gnarly code base."
+      },
+      {
+        "type": "paragraph",
+        "text": "The team of 16 was trying to eliminate 112 regulatory defects. Alfonzo had promised his CEO they would get that number down to single figures by the end of the year."
+      },
+      {
+        "type": "paragraph",
+        "text": "It was late April, so they had just over eight months left."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThey need to get through at least thirteen a month,\u201d he said. \u201cThey\u2019re currently doing ten. That\u2019s a 30 percent bump in productivity.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I asked if he had a backup plan."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI\u2019ve got a big project wrapping up in September. If I need to, I\u2019ll move six of my best programmers onto these bug fixes.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "More developers. The obvious solution. I nodded and went to meet the team."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Their manager, Eve, showed me around. When I asked to see their defect tracking system, she pointed behind me to three whiteboards covered in yellow stickies\u2014one for each defect."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cYou said you have two testers. Where\u2019s their board?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThey have their own board, around the corner.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHow come?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOnce upon a time, the testers\u2019 stickies used to fit on the third board along with the programmers\u2019. But the testers couldn\u2019t keep up, so I got them a new board. It would block the walkway if we placed it next to the others.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She wheeled out the fourth board and placed it beside the others."
+      },
+      {
+        "type": "paragraph",
+        "text": "The four boards showed the team\u2019s entire process. Each defect went through four steps: Analysis, Design, Programming, and Testing. What struck me was where all the work was stuck."
+      },
+      {
+        "type": "paragraph",
+        "text": "The testers\u2019 board was packed. I stepped closer and noticed the stickies were grouped into three clumps: one huge, one small, and one medium."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eve explained: \u201cThe big clump on the left\u2014those have been fixed by the programmers and are waiting to be tested. The small clump is currently being tested. The medium clump has been tested and is waiting to be shipped.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I counted roughly forty stickies in that big clump on the left. At ten defects a month, that was four months of work just sitting there, waiting."
+      },
+      {
+        "type": "paragraph",
+        "text": "I drew an imaginary red circle around it in my mind and labeled it the Waiting Room."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cThat big clump reminds me of patients sitting in a hospital waiting room,\u201d I said."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eve snorted. \u201cIf it were a waiting room, they\u2019d all be dead by now. Died of boredom.\u201d She plucked one sticky from the pile, turned it over, and blanched. \u201cThe programmers started working on this defect fourteen months ago.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cFourteen months?!\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIt\u2019s easy. The programmer takes two weeks to fix it. As soon as they\u2019re finished, it moves to the testers\u2019 board, where it sits in the Waiting Room for a few months. When the testers finally look at it, they discover that it\u2019s mostly fixed but not completely. So it goes back to the programmers\u2019 board, where it waits again. When the programmer becomes free, they fix it again, and it goes back to the Waiting Room for another few months.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She grimaced. \u201cDo you see where this is going?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I did. For most of those fourteen months, the defect was just sitting around waiting to be worked on."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "The testers were the bottleneck. They couldn\u2019t keep up with the rest of the team. But because everyone else kept working at full speed, they\u2019d created that enormous Waiting Room\u2014and ridiculous delays."
+      },
+      {
+        "type": "paragraph",
+        "text": "I asked Eve if there was any way to get more testing capacity."
+      },
+      {
+        "type": "paragraph",
+        "text": "She shook her head. \u201cOur two testers are already working as efficiently as possible. They\u2019ve cut every ounce of fat they can find. Neither has had any training in the past two years. They never attend their test-team meetings. They cannot do any more.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWhat about recruiting?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOur old, clunky system is staggeringly difficult to learn. Whenever someone new joins, my existing testers slow down enormously because they have to teach them. It takes months and months to get up to speed. There are only four testers in the whole company with the depth of knowledge we need, and their managers won\u2019t release them.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She folded her arms. \u201cSo there you go.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "A week later, I met with Eve and her entire team in the boardroom. We\u2019d carried the four whiteboards up\u2014it took two elevator trips."
+      },
+      {
+        "type": "paragraph",
+        "text": "I explained the bottleneck situation. Eyes glazed over. So I changed tack."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cHave you guys heard the buffalo joke?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "It&#x27;s an old joke\u2014an imagined conversation between Norm and Cliff from the TV sitcom <em>Cheers</em>."
+      },
+      {
+        "type": "paragraph",
+        "text": "The gist: a herd of buffalo can only move as fast as its slowest member. When wolves hunt them, they pick off the weakest at the back. This makes the herd faster and stronger."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cIn much the same way,\u201d Cliff explains, \u201cthe human brain can only operate as fast as the slowest brain cells. And as we know, alcohol attacks the weakest brain cells first. So, regular beer consumption eliminates the weaker brain cells, making the brain faster and more efficient. And that, Norm, is why you always feel smarter after a few beers.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "There was a burst of laughter. Then everyone looked around, smiling at each other. Then they turned back to face me, clearly wondering why I\u2019d just told them this silly story."
+      },
+      {
+        "type": "paragraph",
+        "text": "I asked: \u201cDo you folks have a slowest buffalo in your team?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "All eyes turned to the two testers, Lawrence and Anne, sitting at the end of the table."
+      },
+      {
+        "type": "paragraph",
+        "text": "Anne said tentatively, \u201cObviously, it\u2019s us, right?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the senior developers, Peter, chuckled. \u201cDoes that mean we should feed you two to the wolves?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Everyone laughed\u2014including the testers."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then Peter turned serious. \u201cI know you\u2019re both working really hard, but is there anything\u2014anything at all\u2014you can think of that might help you speed up, even a little bit?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Lawrence shook his head. \u201cWe\u2019ve been asking ourselves that for months.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "But Anne said, \u201cActually, there is one thing. You guys keep interrupting us to ask questions about the defects you\u2019re working on. That takes time away from testing, and after we\u2019ve helped you, it takes us a few minutes to get back up to speed. If we weren\u2019t interrupted so much, I bet we\u2019d gain half an hour back each day.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Peter frowned. \u201cBut if we don\u2019t ask you for help, we can\u2019t finish our work.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "The team\u2019s designer, Gloria, spoke up. \u201cIsn\u2019t that the other point of the buffalo joke? The faster buffalo needs to slow down and run at the speed of the slower buffalo. Otherwise, the herd splits apart.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Silence."
+      },
+      {
+        "type": "paragraph",
+        "text": "They\u2019d been trying to fix their problem by having everyone work harder. Now they were realizing that the faster buffalo needed to slow down."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eve spoke. \u201cI\u2019m going to make this easy. Starting now, no one works on any stickies unless they\u2019re already on the testing board. There\u2019s at least three months\u2019 work there. Those defects are our only priority. Don\u2019t start anything new.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "One programmer protested: \u201cBut we can\u2019t just sit there doing nothing!\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Peter said, \u201cWe don\u2019t have to twiddle our thumbs. Some defects will fail testing, and we\u2019ll need to fix them. And \u2026\u201d He turned to the testers. \u201cAre there any ways we could help you out?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Lawrence thought for a moment. \u201cYou could type in some of our test data. That takes us ages.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Another programmer shook his head. \u201cI\u2019m not doing manual data entry. We\u2019re programmers\u2014we automate things like that. We\u2019ve got scripts written that you could use.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "Lawrence stared at him. \u201cYou\u2019ve got scripts?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cOf course. Hasn\u2019t anyone ever shown you?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cNo!\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cI guess we\u2019ve been too busy.\u201d The programmer paused. \u201cI can customize and run them for you. It\u2019ll save you a load of time.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "The conversation kept going. The programmers offered to take over environment management so the testers could focus on testing. The analysts offered to sort through the Waiting Room and group similar defects into batches. The designer offered to identify which defects would be hardest to test, so they could leave those for last."
+      },
+      {
+        "type": "paragraph",
+        "text": "By the end of the meeting, the whole team was working differently."
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Almost a year later, Eve and I had lunch together."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cWe fixed and tested 106 of the 112 defects,\u201d she said. \u201cHit Alfonzo\u2019s target. We bumped our throughput by a little over 30 percent without spending a penny.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cBrilliant!\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cA year ago, it used to take over ten months from when an analyst first looked at a defect to when we shipped it. Now it\u2019s down to five weeks.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cFantastic!\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cAnd remember how Alfonzo promised to lend us six developers if we needed them?\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I nodded."
+      },
+      {
+        "type": "paragraph",
+        "text": "She chuckled. \u201cTurns out we had too many programmers. I reduced my headcount and gave three to projects that could use them. So not only did our throughput jump by a third, but my budget dropped by 15 percent.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "I asked if testing was still her bottleneck."
+      },
+      {
+        "type": "paragraph",
+        "text": "She frowned. \u201cOf course. Where else would it be? We keep a few stickies in the testers\u2019 fuel tank, ready for testing. Not too many, not too few. We couldn\u2019t do that if our programmers were the bottleneck.\u201d"
+      },
+      {
+        "type": "paragraph",
+        "text": "She smiled."
+      },
+      {
+        "type": "paragraph",
+        "text": "\u201cMy team is calmer, happier, smaller, and faster than we\u2019ve ever been.\u201d"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "paragraph",
+        "text": "Eve\u2019s team wasn\u2019t a Timer Team. They couldn\u2019t be. But they used the same thinking: find the real bottleneck, stop fighting it, and reshape everything else to support it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Remember Alfonzo\u2019s backup plan? Six more developers. The obvious solution."
+      },
+      {
+        "type": "paragraph",
+        "text": "It would have been a disaster."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eve\u2019s team didn\u2019t have a developer shortage. They had a developer <em>surplus</em>. All those programmers churning out fixes that piled up in the Waiting Room, sitting there for months. Adding six more would have made the pile bigger and the delays longer."
+      },
+      {
+        "type": "paragraph",
+        "text": "The problem wasn\u2019t too few developers. It was too many\u2014relative to their immovable testing capacity."
+      },
+      {
+        "type": "paragraph",
+        "text": "Once Eve saw that, she did the counterintuitive thing: she slowed the developers down, used their spare capacity to help the testers, and eventually gave three of them back to other projects."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fewer developers. More output. Lower costs. Faster team."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sometimes the answer isn\u2019t more. It\u2019s less\u2014but in the right shape."
+      }
+    ]
+  }
+]

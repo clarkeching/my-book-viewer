@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Clarke Ching's Book Library</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #1a1a2e;
+            --sidebar-bg: #ffffff;
+            --sidebar-hover: #f3f4f6;
+            --sidebar-active: #e5e7eb;
+            --border-color: #e5e7eb;
+            --accent-color: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --progress-bg: #e5e7eb;
+            --part-color: #6b7280;
+        }
+
+        .dark-mode {
+            --bg-color: #111827;
+            --text-color: #f3f4f6;
+            --sidebar-bg: #1f2937;
+            --sidebar-hover: #374151;
+            --sidebar-active: #4b5563;
+            --border-color: #374151;
+            --accent-color: #60a5fa;
+            --accent-glow: rgba(96, 165, 250, 0.2);
+            --progress-bg: #374151;
+            --part-color: #9ca3af;
+        }
+
+        body {
+            font-family: 'Merriweather', Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.85;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 300px;
+            background: var(--sidebar-bg);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+            z-index: 100;
+            box-shadow: 2px 0 12px rgba(0,0,0,0.04);
+        }
+
+        .sidebar-header {
+            padding: 24px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--part-color);
+            text-decoration: none;
+            margin-bottom: 12px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+
+        .sidebar-header h1 {
+            margin: 0 0 6px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-color);
+            letter-spacing: -0.3px;
+        }
+
+        .sidebar-header .author {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--part-color);
+        }
+
+        .progress-container {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: var(--progress-bg);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color) 0%, #60a5fa 100%);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 0%;
+            border-radius: 6px;
+        }
+
+        .progress-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--part-color);
+            margin-top: 10px;
+        }
+
+        .toc {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px 0;
+        }
+
+        .toc-item {
+            font-family: 'Inter', sans-serif;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-item:hover {
+            background: var(--sidebar-hover);
+        }
+
+        .toc-item.active {
+            background: var(--accent-glow);
+            border-left-color: var(--accent-color);
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .toc-item.part {
+            font-weight: 700;
+            color: var(--part-color);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .toc-item.part:first-child {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 12px;
+        }
+
+        .toc-item.chapter {
+            padding-left: 28px;
+        }
+
+        .sidebar-footer {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            font-family: 'Inter', sans-serif;
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            color: var(--text-color);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--sidebar-hover);
+            border-color: var(--part-color);
+        }
+
+        /* Main content */
+        .main {
+            flex: 1;
+            margin-left: 300px;
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .content {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 70px 40px;
+        }
+
+        .chapter-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin: 0 0 40px 0;
+            padding-bottom: 24px;
+            border-bottom: 2px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        .chapter-content p {
+            margin: 0 0 1.6em 0;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+
+        .chapter-content .separator {
+            text-align: center;
+            margin: 2.5em 0;
+            color: var(--part-color);
+            letter-spacing: 0.5em;
+            font-size: 1.2rem;
+        }
+
+        .chapter-content .centered {
+            text-align: center;
+            margin: 1.8em 0;
+        }
+
+        .chapter-content h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin: 2.5em 0 1em 0;
+            color: var(--text-color);
+        }
+
+        .chapter-content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 2em 0 1em 0;
+            color: var(--text-color);
+        }
+
+        .chapter-content .book-image {
+            display: block;
+            max-width: 70%;
+            height: auto;
+            margin: 2.5em auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            font-family: 'Inter', sans-serif;
+            padding: 16px 24px;
+            background: var(--sidebar-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            transition: all 0.2s ease;
+            max-width: 45%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .nav-btn:hover {
+            background: var(--sidebar-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .nav-btn .label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--part-color);
+            margin-bottom: 5px;
+        }
+
+        .nav-btn .title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Mobile menu button */
+        .menu-toggle {
+            display: none;
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            z-index: 200;
+            padding: 12px 16px;
+            background: var(--sidebar-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            cursor: pointer;
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: all 0.2s ease;
+        }
+
+        .menu-toggle:hover {
+            background: var(--sidebar-hover);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 900px) {
+            .sidebar {
+                transform: translateX(-100%);
+                box-shadow: none;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+                box-shadow: 4px 0 24px rgba(0,0,0,0.15);
+            }
+
+            .main {
+                margin-left: 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .content {
+                padding: 80px 24px 50px 24px;
+            }
+
+            .chapter-title {
+                font-size: 1.75rem;
+            }
+
+            .sidebar-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.4);
+                z-index: 50;
+                backdrop-filter: blur(2px);
+            }
+
+            .sidebar-overlay.open {
+                display: block;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .chapter-title {
+                font-size: 1.5rem;
+            }
+
+            .chapter-content p {
+                font-size: 1rem;
+            }
+
+            .sidebar {
+                width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="back-link">← All Books</a>
+                <h1 id="bookTitle">Loading...</h1>
+                <p class="author">by Clarke Ching</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">0% complete</div>
+            </div>
+            <nav class="toc" id="toc"></nav>
+            <div class="sidebar-footer">
+                <button class="btn" onclick="toggleDarkMode()">🌓 Theme</button>
+                <button class="btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <article class="content">
+                <h1 class="chapter-title" id="chapterTitle"></h1>
+                <div class="chapter-content" id="chapterContent"></div>
+                <div class="nav-buttons">
+                    <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">
+                        <div class="label">← Previous</div>
+                        <div class="title" id="prevTitle"></div>
+                    </button>
+                    <button class="nav-btn" id="nextBtn" onclick="navigate(1)">
+                        <div class="label">Next →</div>
+                        <div class="title" id="nextTitle"></div>
+                    </button>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script>
+        let bookData = [];
+        let currentChapter = 0;
+        let fontSize = 1.1;
+        let currentBookId = 'speed-book';
+
+        // Book configuration
+        const books = {
+            'speed-book': {
+                title: 'The SPEED Book',
+                dataFile: 'books/speed-book/book-data.json',
+                imagesPath: 'books/speed-book/images/'
+            },
+            'bottleneck-rules': {
+                title: 'The Bottleneck Rules',
+                dataFile: 'books/bottleneck-rules/book-data.json',
+                imagesPath: 'books/bottleneck-rules/images/'
+            }
+        };
+
+        // Get book ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        currentBookId = urlParams.get('book') || 'speed-book';
+
+        // Redirect to library if book doesn't exist
+        if (!books[currentBookId]) {
+            window.location.href = 'index.html';
+        }
+
+        const currentBook = books[currentBookId];
+        document.getElementById('bookTitle').textContent = currentBook.title;
+        document.title = currentBook.title + ' - Clarke Ching';
+
+        // Load book data
+        fetch(currentBook.dataFile)
+            .then(response => response.json())
+            .then(data => {
+                bookData = data;
+                buildTOC();
+                loadChapter(getSavedChapter());
+                // Save total chapters for library progress display
+                localStorage.setItem(`${currentBookId}-total`, bookData.length);
+            })
+            .catch(err => {
+                document.getElementById('chapterContent').innerHTML = '<p>Error loading book content. Please refresh the page.</p>';
+                console.error(err);
+            });
+
+        function buildTOC() {
+            const toc = document.getElementById('toc');
+            bookData.forEach((chapter, index) => {
+                const item = document.createElement('div');
+                item.className = 'toc-item';
+
+                // Determine if it's a part or chapter
+                if (chapter.title.startsWith('Part ')) {
+                    item.classList.add('part');
+                } else if (chapter.title.startsWith('Chapter ')) {
+                    item.classList.add('chapter');
+                }
+
+                item.textContent = chapter.title;
+                item.onclick = () => loadChapter(index);
+                toc.appendChild(item);
+            });
+        }
+
+        function loadChapter(index) {
+            if (index < 0 || index >= bookData.length) return;
+
+            currentChapter = index;
+            const chapter = bookData[index];
+
+            // Update title
+            document.getElementById('chapterTitle').textContent = chapter.title;
+
+            // Update content
+            const content = document.getElementById('chapterContent');
+            content.innerHTML = chapter.content.map(item => {
+                switch (item.type) {
+                    case 'paragraph':
+                        return `<p>${item.text}</p>`;
+                    case 'separator':
+                        return '<p class="separator">* * *</p>';
+                    case 'centered':
+                        return `<p class="centered">${item.text}</p>`;
+                    case 'heading2':
+                        return `<h2>${item.text}</h2>`;
+                    case 'heading3':
+                        return `<h3>${item.text}</h3>`;
+                    case 'image':
+                        return `<img src="${item.src}" alt="Book illustration" class="book-image">`;
+                    default:
+                        return `<p>${item.text}</p>`;
+                }
+            }).join('');
+
+            // Update TOC active state
+            document.querySelectorAll('.toc-item').forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+
+            // Scroll TOC item into view
+            const activeItem = document.querySelector('.toc-item.active');
+            if (activeItem) {
+                activeItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
+            // Update nav buttons
+            updateNavButtons();
+
+            // Update progress
+            updateProgress();
+
+            // Save progress (per book)
+            localStorage.setItem(`${currentBookId}-chapter`, index);
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+
+            // Close sidebar on mobile
+            if (window.innerWidth <= 900) {
+                closeSidebar();
+            }
+        }
+
+        function updateNavButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const prevTitle = document.getElementById('prevTitle');
+            const nextTitle = document.getElementById('nextTitle');
+
+            if (currentChapter > 0) {
+                prevBtn.disabled = false;
+                prevTitle.textContent = bookData[currentChapter - 1].title;
+            } else {
+                prevBtn.disabled = true;
+                prevTitle.textContent = '';
+            }
+
+            if (currentChapter < bookData.length - 1) {
+                nextBtn.disabled = false;
+                nextTitle.textContent = bookData[currentChapter + 1].title;
+            } else {
+                nextBtn.disabled = true;
+                nextTitle.textContent = '';
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentChapter + 1) / bookData.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent =
+                `Chapter ${currentChapter + 1} of ${bookData.length} (${Math.round(progress)}% complete)`;
+        }
+
+        function navigate(direction) {
+            loadChapter(currentChapter + direction);
+        }
+
+        function getSavedChapter() {
+            const saved = localStorage.getItem(`${currentBookId}-chapter`);
+            return saved ? parseInt(saved, 10) : 0;
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('speedbook-dark', document.body.classList.contains('dark-mode'));
+        }
+
+        function changeFontSize(delta) {
+            fontSize = Math.max(0.9, Math.min(1.5, fontSize + delta * 0.1));
+            document.querySelector('.chapter-content').style.fontSize = fontSize + 'rem';
+            localStorage.setItem('speedbook-fontsize', fontSize);
+        }
+
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('open');
+            document.querySelector('.sidebar-overlay').classList.toggle('open');
+        }
+
+        function closeSidebar() {
+            document.querySelector('.sidebar').classList.remove('open');
+            document.querySelector('.sidebar-overlay').classList.remove('open');
+        }
+
+        // Load saved preferences
+        if (localStorage.getItem('speedbook-dark') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        const savedFontSize = localStorage.getItem('speedbook-fontsize');
+        if (savedFontSize) {
+            fontSize = parseFloat(savedFontSize);
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.chapter-content').style.fontSize = fontSize + 'rem';
+            });
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') navigate(-1);
+            if (e.key === 'ArrowRight') navigate(1);
+        });
+    </script>
+</body>
+</html>
