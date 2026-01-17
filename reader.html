@@ -274,6 +274,91 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
 
+        /* Book Home Page */
+        .book-home {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .book-home-cover {
+            width: 220px;
+            height: 320px;
+            margin: 0 auto 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 24px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .book-home-cover.speed { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .book-home-cover.detective { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .book-home-cover.rules { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .book-home-cover.corkscrew { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .book-home-cover.rolling { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #1a1a2e; text-shadow: none; }
+        .book-home-cover.rocks-gold { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #1a1a2e; text-shadow: none; }
+        .book-home-cover.masterclass { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+
+        .book-home-byline {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: var(--part-color);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .book-home-section-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 50px 0 30px;
+            color: var(--text-color);
+        }
+
+        .book-home-pitch {
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        .book-home-pitch p {
+            margin: 0 0 1.4em 0;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .book-home-pitch strong {
+            color: var(--text-color);
+        }
+
+        .read-now-btn {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            padding: 18px 48px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .read-now-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+        }
+
         .nav-buttons {
             display: flex;
             justify-content: space-between;
@@ -463,12 +548,31 @@
             'speed-book': {
                 title: 'The SPEED Book',
                 dataFile: 'books/speed-book/book-data.json',
-                imagesPath: 'books/speed-book/images/'
+                imagesPath: 'books/speed-book/images/',
+                coverClass: 'speed',
+                byline: 'From Clarke Ching, the author of Rolling Rocks Downhill and The Bottleneck Rules',
+                pitch: `
+                    <p>This is a short book—so short you can read it this weekend—about <strong>how to make your software teams go faster.</strong></p>
+                    <p>I know that might sound impossible if your teams are slowing down. You might have grown your workforce but your throughput hasn't kept pace. Or maybe you're facing that dreaded moment when adding more people actually made things worse.</p>
+                    <p>You're not alone. And it's not your fault. But there is a way forward.</p>
+                    <p><strong>The SPEED Book</strong> tackles a problem few managers talk about openly: <strong>why growing teams often slows everything down</strong>—and what to do about it.</p>
+                    <p>Inside, you'll discover:</p>
+                    <p>• Why bottlenecks secretly control your throughput (and how to exploit this truth to your advantage)<br>
+                    • The counterintuitive reason most "productivity" initiatives backfire<br>
+                    • A simple mental model—the hourglass—that will change how you think about teamwork forever<br>
+                    • How to speed up without hiring more people or burning out your team</p>
+                    <p>This isn't another agile playbook or software process manual. It's a <strong>practical, grounded approach</strong> to fixing the hidden friction that's holding your teams back.</p>
+                    <p>Whether you're leading one team or dozens, this book will help you cut through the chaos and find the leverage points that actually matter.</p>
+                    <p><strong>Read it this weekend. Apply it on Monday.</strong></p>
+                `
             },
             'bottleneck-rules': {
                 title: 'The Bottleneck Rules',
                 dataFile: 'books/bottleneck-rules/book-data.json',
-                imagesPath: 'books/bottleneck-rules/images/'
+                imagesPath: 'books/bottleneck-rules/images/',
+                coverClass: 'rules',
+                byline: 'By Clarke Ching',
+                pitch: `<p>The essential principles every leader needs to know about bottlenecks. Short, punchy, and immediately actionable.</p>`
             }
         };
 
@@ -502,6 +606,14 @@
 
         function buildTOC() {
             const toc = document.getElementById('toc');
+
+            // Add Home item first
+            const homeItem = document.createElement('div');
+            homeItem.className = 'toc-item';
+            homeItem.textContent = 'About This Book';
+            homeItem.onclick = () => loadChapter(-1);
+            toc.appendChild(homeItem);
+
             bookData.forEach((chapter, index) => {
                 const item = document.createElement('div');
                 item.className = 'toc-item';
@@ -520,38 +632,55 @@
         }
 
         function loadChapter(index) {
-            if (index < 0 || index >= bookData.length) return;
+            if (index < -1 || index >= bookData.length) return;
 
             currentChapter = index;
-            const chapter = bookData[index];
-
-            // Update title
-            document.getElementById('chapterTitle').textContent = chapter.title;
-
-            // Update content
             const content = document.getElementById('chapterContent');
-            content.innerHTML = chapter.content.map(item => {
-                switch (item.type) {
-                    case 'paragraph':
-                        return `<p>${item.text}</p>`;
-                    case 'separator':
-                        return '<p class="separator">* * *</p>';
-                    case 'centered':
-                        return `<p class="centered">${item.text}</p>`;
-                    case 'heading2':
-                        return `<h2>${item.text}</h2>`;
-                    case 'heading3':
-                        return `<h3>${item.text}</h3>`;
-                    case 'image':
-                        return `<img src="${item.src}" alt="Book illustration" class="book-image">`;
-                    default:
-                        return `<p>${item.text}</p>`;
-                }
-            }).join('');
 
-            // Update TOC active state
+            // Handle home page
+            if (index === -1) {
+                document.getElementById('chapterTitle').textContent = currentBook.title;
+                content.innerHTML = `
+                    <div class="book-home">
+                        <div class="book-home-cover ${currentBook.coverClass}">${currentBook.title}</div>
+                        <p class="book-home-byline">${currentBook.byline}</p>
+                        <h2 class="book-home-section-title">Why You Should Read This Book</h2>
+                        <div class="book-home-pitch">
+                            ${currentBook.pitch}
+                        </div>
+                        <button class="read-now-btn" onclick="loadChapter(0)">Read Now →</button>
+                    </div>
+                `;
+            } else {
+                const chapter = bookData[index];
+
+                // Update title
+                document.getElementById('chapterTitle').textContent = chapter.title;
+
+                // Update content
+                content.innerHTML = chapter.content.map(item => {
+                    switch (item.type) {
+                        case 'paragraph':
+                            return `<p>${item.text}</p>`;
+                        case 'separator':
+                            return '<p class="separator">* * *</p>';
+                        case 'centered':
+                            return `<p class="centered">${item.text}</p>`;
+                        case 'heading2':
+                            return `<h2>${item.text}</h2>`;
+                        case 'heading3':
+                            return `<h3>${item.text}</h3>`;
+                        case 'image':
+                            return `<img src="${item.src}" alt="Book illustration" class="book-image">`;
+                        default:
+                            return `<p>${item.text}</p>`;
+                    }
+                }).join('');
+            }
+
+            // Update TOC active state (index + 1 because home is at position 0)
             document.querySelectorAll('.toc-item').forEach((item, i) => {
-                item.classList.toggle('active', i === index);
+                item.classList.toggle('active', i === index + 1);
             });
 
             // Scroll TOC item into view
@@ -587,12 +716,19 @@
             if (currentChapter > 0) {
                 prevBtn.disabled = false;
                 prevTitle.textContent = bookData[currentChapter - 1].title;
+            } else if (currentChapter === 0) {
+                prevBtn.disabled = false;
+                prevTitle.textContent = 'About This Book';
             } else {
+                // On home page
                 prevBtn.disabled = true;
                 prevTitle.textContent = '';
             }
 
-            if (currentChapter < bookData.length - 1) {
+            if (currentChapter === -1) {
+                nextBtn.disabled = false;
+                nextTitle.textContent = bookData[0].title;
+            } else if (currentChapter < bookData.length - 1) {
                 nextBtn.disabled = false;
                 nextTitle.textContent = bookData[currentChapter + 1].title;
             } else {
@@ -602,10 +738,15 @@
         }
 
         function updateProgress() {
-            const progress = ((currentChapter + 1) / bookData.length) * 100;
-            document.getElementById('progressFill').style.width = progress + '%';
-            document.getElementById('progressText').textContent =
-                `Chapter ${currentChapter + 1} of ${bookData.length} (${Math.round(progress)}% complete)`;
+            if (currentChapter === -1) {
+                document.getElementById('progressFill').style.width = '0%';
+                document.getElementById('progressText').textContent = 'Ready to start';
+            } else {
+                const progress = ((currentChapter + 1) / bookData.length) * 100;
+                document.getElementById('progressFill').style.width = progress + '%';
+                document.getElementById('progressText').textContent =
+                    `Chapter ${currentChapter + 1} of ${bookData.length} (${Math.round(progress)}% complete)`;
+            }
         }
 
         function navigate(direction) {
@@ -614,7 +755,7 @@
 
         function getSavedChapter() {
             const saved = localStorage.getItem(`${currentBookId}-chapter`);
-            return saved ? parseInt(saved, 10) : 0;
+            return saved !== null ? parseInt(saved, 10) : -1;
         }
 
         function toggleDarkMode() {
