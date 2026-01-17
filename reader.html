@@ -388,6 +388,17 @@
             border-color: var(--part-color);
         }
 
+        .version {
+            position: fixed;
+            top: 8px;
+            right: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            color: var(--part-color);
+            opacity: 0.5;
+            z-index: 50;
+        }
+
         .nav-buttons {
             display: flex;
             justify-content: space-between;
@@ -524,6 +535,7 @@
     </style>
 </head>
 <body>
+    <div class="version">v1.0</div>
     <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
     <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
