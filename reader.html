@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Clarke's Books">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <link rel="manifest" href="manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -308,7 +313,7 @@
 
         .book-home-byline {
             font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
+            font-size: inherit;
             color: var(--part-color);
             margin-bottom: 40px;
             font-style: italic;
@@ -329,7 +334,7 @@
 
         .book-home-pitch p {
             margin: 0 0 1.4em 0;
-            font-size: 1.05rem;
+            font-size: inherit;
             line-height: 1.8;
         }
 
@@ -535,7 +540,7 @@
     </style>
 </head>
 <body>
-    <div class="version">v1.2</div>
+    <div class="version">v1.3</div>
     <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
     <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
