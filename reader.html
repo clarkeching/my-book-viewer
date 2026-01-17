@@ -535,7 +535,7 @@
     </style>
 </head>
 <body>
-    <div class="version">v1.0</div>
+    <div class="version">v1.1</div>
     <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
     <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
@@ -683,10 +683,6 @@
                     <div class="book-home">
                         <div class="book-home-cover ${currentBook.coverClass}">${currentBook.title}</div>
                         <p class="book-home-byline">${currentBook.byline}</p>
-                        <h2 class="book-home-section-title">Why You Should Read This Book</h2>
-                        <div class="book-home-pitch">
-                            ${currentBook.pitch}
-                        </div>
                         <div class="book-home-actions">
                             ${hasProgress ? `
                                 <button class="read-now-btn" onclick="loadChapter(${savedChapter})">Continue Reading →</button>
@@ -695,6 +691,10 @@
                             ` : `
                                 <button class="read-now-btn" onclick="loadChapter(0)">Start Reading →</button>
                             `}
+                        </div>
+                        <h2 class="book-home-section-title">Why You Should Read This Book</h2>
+                        <div class="book-home-pitch">
+                            ${currentBook.pitch}
                         </div>
                     </div>
                 `;
