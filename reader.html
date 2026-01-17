@@ -359,6 +359,35 @@
             box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
         }
 
+        .book-home-actions {
+            margin-top: 30px;
+        }
+
+        .resume-info {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--part-color);
+            margin: 16px 0;
+        }
+
+        .start-over-btn {
+            font-family: 'Inter', sans-serif;
+            padding: 12px 24px;
+            background: transparent;
+            color: var(--part-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .start-over-btn:hover {
+            background: var(--sidebar-hover);
+            border-color: var(--part-color);
+        }
+
         .nav-buttons {
             display: flex;
             justify-content: space-between;
@@ -502,7 +531,7 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <a href="index.html" class="back-link">← All Books</a>
-                <h1 id="bookTitle">Loading...</h1>
+                <h1 id="bookTitle" onclick="loadChapter(-1)" style="cursor: pointer;">Loading...</h1>
                 <p class="author">by Clarke Ching</p>
             </div>
             <div class="progress-container">
@@ -595,7 +624,8 @@
             .then(data => {
                 bookData = data;
                 buildTOC();
-                loadChapter(getSavedChapter());
+                // Always start at home page - user can choose to resume
+                loadChapter(-1);
                 // Save total chapters for library progress display
                 localStorage.setItem(`${currentBookId}-total`, bookData.length);
             })
@@ -606,13 +636,6 @@
 
         function buildTOC() {
             const toc = document.getElementById('toc');
-
-            // Add Home item first
-            const homeItem = document.createElement('div');
-            homeItem.className = 'toc-item';
-            homeItem.textContent = 'About This Book';
-            homeItem.onclick = () => loadChapter(-1);
-            toc.appendChild(homeItem);
 
             bookData.forEach((chapter, index) => {
                 const item = document.createElement('div');
@@ -640,6 +663,10 @@
             // Handle home page
             if (index === -1) {
                 document.getElementById('chapterTitle').textContent = currentBook.title;
+                const savedChapter = getSavedChapter();
+                const hasProgress = savedChapter > 0;
+                const resumeChapterTitle = hasProgress ? bookData[savedChapter].title : '';
+
                 content.innerHTML = `
                     <div class="book-home">
                         <div class="book-home-cover ${currentBook.coverClass}">${currentBook.title}</div>
@@ -648,7 +675,15 @@
                         <div class="book-home-pitch">
                             ${currentBook.pitch}
                         </div>
-                        <button class="read-now-btn" onclick="loadChapter(0)">Read Now →</button>
+                        <div class="book-home-actions">
+                            ${hasProgress ? `
+                                <button class="read-now-btn" onclick="loadChapter(${savedChapter})">Continue Reading →</button>
+                                <p class="resume-info">Resume from: ${resumeChapterTitle}</p>
+                                <button class="start-over-btn" onclick="loadChapter(0)">Start from Beginning</button>
+                            ` : `
+                                <button class="read-now-btn" onclick="loadChapter(0)">Start Reading →</button>
+                            `}
+                        </div>
                     </div>
                 `;
             } else {
@@ -678,9 +713,9 @@
                 }).join('');
             }
 
-            // Update TOC active state (index + 1 because home is at position 0)
+            // Update TOC active state
             document.querySelectorAll('.toc-item').forEach((item, i) => {
-                item.classList.toggle('active', i === index + 1);
+                item.classList.toggle('active', i === index);
             });
 
             // Scroll TOC item into view
@@ -701,6 +736,9 @@
             // Scroll to top
             window.scrollTo(0, 0);
 
+            // Apply saved font size
+            applyFontSize();
+
             // Close sidebar on mobile
             if (window.innerWidth <= 900) {
                 closeSidebar();
@@ -716,11 +754,8 @@
             if (currentChapter > 0) {
                 prevBtn.disabled = false;
                 prevTitle.textContent = bookData[currentChapter - 1].title;
-            } else if (currentChapter === 0) {
-                prevBtn.disabled = false;
-                prevTitle.textContent = 'About This Book';
             } else {
-                // On home page
+                // On home page or first chapter
                 prevBtn.disabled = true;
                 prevTitle.textContent = '';
             }
@@ -765,8 +800,15 @@
 
         function changeFontSize(delta) {
             fontSize = Math.max(0.9, Math.min(1.5, fontSize + delta * 0.1));
-            document.querySelector('.chapter-content').style.fontSize = fontSize + 'rem';
+            applyFontSize();
             localStorage.setItem('speedbook-fontsize', fontSize);
+        }
+
+        function applyFontSize() {
+            const content = document.querySelector('.chapter-content');
+            if (content) {
+                content.style.fontSize = fontSize + 'rem';
+            }
         }
 
         function toggleSidebar() {
@@ -787,9 +829,6 @@
         const savedFontSize = localStorage.getItem('speedbook-fontsize');
         if (savedFontSize) {
             fontSize = parseFloat(savedFontSize);
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelector('.chapter-content').style.fontSize = fontSize + 'rem';
-            });
         }
 
         // Keyboard navigation
